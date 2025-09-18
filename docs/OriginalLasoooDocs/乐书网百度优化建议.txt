@@ -1,0 +1,193 @@
+【合并JS】
+
+    http://www.lasooo.cn/misc/jquery.js?v=1.4.4（78.60k 耗时:1.68秒）
+    http://www.lasooo.cn/misc/jquery.once.js?v=1.2（2.97k 耗时:1.23秒）
+    http://www.lasooo.cn/misc/drupal.js?mjh4vu（13.85k 耗时:1.98秒）
+    http://www.lasooo.cn/sites/default/files/languages/zh-han...（5.26k 耗时:1.23秒）
+    http://www.lasooo.cn/themes/lasooo/js/page-front.js?mjh4vu（0.04k 耗时:1.43秒）
+    http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/n...（2.50k 耗时:1.73秒）
+    http://www.lasooo.cn/sites/all/views/custom/activities/mi...（0.77k 耗时:1.68秒）
+    http://www.lasooo.cn/themes/lasooo/js/light-framework.js?...（2.45k 耗时:1.73秒）
+
+
+【合并CSS】
+减少39次请求 合并相同域名下的css，可以减少网络连接次数。
+收起详情
+
+    第1组可合并的CSS（减少39次请求）
+        http://www.lasooo.cn/modules/system/system.base.css?mjh4vu（5.35k 耗时:0.24秒）
+        http://www.lasooo.cn/modules/system/system.menus.css?mjh4vu（2.04k 耗时:0.04秒）
+        http://www.lasooo.cn/modules/system/system.messages.css?m...（0.96k 耗时:0.09秒）
+        http://www.lasooo.cn/modules/system/system.theme.css?mjh4vu（3.71k 耗时:0.19秒）
+        http://www.lasooo.cn/modules/book/book.css?mjh4vu（0.98k 耗时:0.09秒）
+        http://www.lasooo.cn/modules/comment/comment.css?mjh4vu（0.18k 耗时:0.14秒）
+        http://www.lasooo.cn/sites/all/modules/date/date_api/date...（3.53k 耗时:0.39秒）
+        http://www.lasooo.cn/sites/all/modules/date/date_popup/th...（3.72k 耗时:0.44秒）
+        http://www.lasooo.cn/sites/all/modules/date/date_repeat_f...（2.29k 耗时:0.34秒）
+        http://www.lasooo.cn/modules/field/theme/field.css?mjh4vu（0.55k 耗时:0.39秒）
+        http://www.lasooo.cn/modules/node/node.css?mjh4vu（0.14k 耗时:0.44秒）
+        http://www.lasooo.cn/modules/search/search.css?mjh4vu（0.56k 耗时:0.43秒）
+        http://www.lasooo.cn/modules/user/user.css?mjh4vu（1.83k 耗时:0.43秒）
+        http://www.lasooo.cn/modules/forum/forum.css?mjh4vu（1.05k 耗时:0.43秒）
+        http://www.lasooo.cn/themes/lasooo/css/channels/frontpage...（0.00k 耗时:0.43秒）
+        http://www.lasooo.cn/themes/lasooo/css/sidebar_slideshow....（0.91k 耗时:0.48秒）
+        http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/n...（1.76k 耗时:0.53秒）
+        http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/s...（0.88k 耗时:0.53秒）
+        http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/u...（1.21k 耗时:0.53秒）
+        http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/w...（1.08k 耗时:0.53秒）
+        http://www.lasooo.cn/themes/lasooo/css/components/comment...（3.60k 耗时:0.53秒）
+        http://www.lasooo.cn/sites/all/views/custom/activities/mi...（5.03k 耗时:0.83秒）
+        http://www.lasooo.cn/themes/lasooo/css/layouts/frontpage....（0.34k 耗时:0.73秒）
+        http://www.lasooo.cn/themes/lasooo/css/960/960.css?mjh4vu（9.99k 耗时:0.73秒）
+        http://www.lasooo.cn/themes/lasooo/css/960/reset.css?mjh4vu（2.06k 耗时:0.73秒）
+        http://www.lasooo.cn/themes/lasooo/css/960/fonts.css?mjh4vu（0.92k 耗时:0.73秒）
+        http://www.lasooo.cn/themes/lasooo/css/layout.css?mjh4vu（1.07k 耗时:0.73秒）
+        http://www.lasooo.cn/themes/lasooo/css/style.css?mjh4vu（1.51k 耗时:1.23秒）
+        http://www.lasooo.cn/themes/lasooo/css/block-view_lasooo_...（1.25k 耗时:1.50秒）
+        http://www.lasooo.cn/themes/lasooo/css/header.region.css（0.30k 耗时:1.15秒）
+        http://www.lasooo.cn/themes/lasooo/css/sidebar_slideshow....（0.91k 耗时:1.15秒）
+        http://www.lasooo.cn/themes/lasooo/css/dynamicBG.region.css（0.12k 耗时:1.15秒）
+        http://www.lasooo.cn/themes/lasooo/css/sidebar_top-frontp...（0.19k 耗时:1.15秒）
+        http://www.lasooo.cn/themes/lasooo/css/main-frontpage.reg...（0.06k 耗时:1.35秒）
+        http://www.lasooo.cn/themes/lasooo/css/footer.region.css（1.72k 耗时:1.35秒）
+        http://www.lasooo.cn/themes/lasooo/css/block-logo.block.css（0.67k 耗时:0.20秒）
+        http://www.lasooo.cn/themes/lasooo/css/block-main_menu.bl...（0.76k 耗时:0.20秒）
+        http://www.lasooo.cn/themes/lasooo/css/block-secondary_me...（0.30k 耗时:0.25秒）
+        http://www.lasooo.cn/themes/lasooo/css/block-View_Cities_...（2.91k 耗时:0.25秒）
+        http://www.lasooo.cn/themes/lasooo/css/blocks/system-main...（0.22k 耗时:0.10秒）
+
+
+【合并相同资源】
+
+
+以下各组静态资源完全一样，请合并为同一URL：
+
+    第1组可相同静态资源（减少1次请求）
+        http://www.lasooo.cn/themes/lasooo/css/sidebar_slideshow....（0.91k 耗时:0.48秒）
+        http://www.lasooo.cn/themes/lasooo/css/sidebar_slideshow....（0.91k 耗时:1.15秒）
+
+
+【压缩元素】
+可减少88.35k字节 使用压缩技术，减少元素的体积，降低网速。
+收起详情
+
+以下元素可在不损失原信息量的前提下进行压缩：
+
+    http://www.lasooo.cn/modules/system/system.base.css?mjh4vu（5.35k 压缩后可节省2.33k字节）
+    http://www.lasooo.cn/modules/system/system.menus.css?mjh4vu（2.04k 压缩后可节省0.59k字节）
+    http://www.lasooo.cn/modules/system/system.messages.css?m...（0.96k 压缩后可节省0.20k字节）
+    http://www.lasooo.cn/modules/system/system.theme.css?mjh4vu（3.71k 压缩后可节省1.21k字节）
+    http://www.lasooo.cn/modules/book/book.css?mjh4vu（0.98k 压缩后可节省0.17k字节）
+    http://www.lasooo.cn/modules/comment/comment.css?mjh4vu（0.18k 压缩后可节省0.04k字节）
+    http://www.lasooo.cn/sites/all/modules/date/date_api/date...（3.53k 压缩后可节省0.96k字节）
+    http://www.lasooo.cn/sites/all/modules/date/date_popup/th...（3.72k 压缩后可节省0.33k字节）
+    http://www.lasooo.cn/sites/all/modules/date/date_repeat_f...（2.29k 压缩后可节省0.23k字节）
+    http://www.lasooo.cn/modules/field/theme/field.css?mjh4vu（0.55k 压缩后可节省0.12k字节）
+    http://www.lasooo.cn/modules/node/node.css?mjh4vu（0.14k 压缩后可节省0.02k字节）
+    http://www.lasooo.cn/modules/search/search.css?mjh4vu（0.56k 压缩后可节省0.12k字节）
+    http://www.lasooo.cn/modules/user/user.css?mjh4vu（1.83k 压缩后可节省0.52k字节）
+    http://www.lasooo.cn/modules/forum/forum.css?mjh4vu（1.05k 压缩后可节省0.18k字节）
+    http://www.lasooo.cn/themes/lasooo/css/sidebar_slideshow....（0.91k 压缩后可节省0.37k字节）
+    http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/n...（1.76k 压缩后可节省0.72k字节）
+    http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/s...（0.88k 压缩后可节省0.16k字节）
+    http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/u...（1.21k 压缩后可节省0.22k字节）
+    http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/w...（1.08k 压缩后可节省0.20k字节）
+    http://www.lasooo.cn/themes/lasooo/css/components/comment...（3.60k 压缩后可节省1.22k字节）
+    http://www.lasooo.cn/sites/all/views/custom/activities/mi...（5.03k 压缩后可节省0.86k字节）
+    http://www.lasooo.cn/themes/lasooo/css/layouts/frontpage....（0.34k 压缩后可节省0.04k字节）
+    http://www.lasooo.cn/themes/lasooo/css/960/960.css?mjh4vu（9.99k 压缩后可节省3.90k字节）
+    http://www.lasooo.cn/themes/lasooo/css/960/reset.css?mjh4vu（2.06k 压缩后可节省0.84k字节）
+    http://www.lasooo.cn/themes/lasooo/css/960/fonts.css?mjh4vu（0.92k 压缩后可节省0.13k字节）
+    http://www.lasooo.cn/themes/lasooo/css/layout.css?mjh4vu（1.07k 压缩后可节省0.41k字节）
+    http://www.lasooo.cn/themes/lasooo/css/style.css?mjh4vu（1.51k 压缩后可节省0.64k字节）
+    http://www.lasooo.cn/misc/jquery.js?v=1.4.4（78.60k 压缩后可节省0.52k字节）
+    http://www.lasooo.cn/misc/jquery.once.js?v=1.2（2.97k 压缩后可节省2.51k字节）
+    http://www.lasooo.cn/misc/drupal.js?mjh4vu（13.85k 压缩后可节省9.51k字节）
+    http://www.lasooo.cn/sites/default/files/languages/zh-han...（5.26k 压缩后可节省0.01k字节）
+    http://www.lasooo.cn/themes/lasooo/js/page-front.js?mjh4vu（0.04k 压缩后可节省0.04k字节）
+    http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/n...（2.50k 压缩后可节省0.85k字节）
+    http://www.lasooo.cn/sites/all/views/custom/activities/mi...（0.77k 压缩后可节省0.23k字节）
+    http://www.lasooo.cn/themes/lasooo/js/light-framework.js?...（2.45k 压缩后可节省1.29k字节）
+    http://www.lasooo.cn/themes/lasooo/css/block-view_lasooo_...（1.25k 压缩后可节省0.25k字节）
+    http://www.lasooo.cn/themes/lasooo/css/header.region.css（0.30k 压缩后可节省0.10k字节）
+    http://www.lasooo.cn/themes/lasooo/css/sidebar_slideshow....（0.91k 压缩后可节省0.37k字节）
+    http://www.lasooo.cn/themes/lasooo/css/dynamicBG.region.css（0.12k 压缩后可节省0.03k字节）
+    http://www.lasooo.cn/themes/lasooo/css/sidebar_top-frontp...（0.19k 压缩后可节省0.11k字节）
+    http://www.lasooo.cn/themes/lasooo/css/main-frontpage.reg...（0.06k 压缩后可节省0.00k字节）
+    http://www.lasooo.cn/themes/lasooo/css/footer.region.css（1.72k 压缩后可节省0.39k字节）
+    http://www.lasooo.cn/themes/lasooo/css/block-logo.block.css（0.67k 压缩后可节省0.12k字节）
+    http://www.lasooo.cn/themes/lasooo/css/block-main_menu.bl...（0.76k 压缩后可节省0.13k字节）
+    http://www.lasooo.cn/themes/lasooo/css/block-secondary_me...（0.30k 压缩后可节省0.04k字节）
+    http://www.lasooo.cn/themes/lasooo/css/block-View_Cities_...（2.91k 压缩后可节省0.55k字节）
+    http://www.lasooo.cn/themes/lasooo/css/blocks/system-main...（0.22k 压缩后可节省0.04k字节）
+    http://hm.baidu.com/h.js?2a8249719bcfc5b4846effbc3941e85a（5.23k 压缩后可节省0.01k字节）
+    http://www.lasooo.cn/sites/default/files/thumbnail-1.jpg（75.33k 压缩后可节省2.06k字节）
+
+以下元素实际大小超过页面定义大小，可做大小压缩：
+
+    http://www.lasooo.cn/sites/default/files/pictures/picture...（56.24k 压缩后可节省52.48k字节）
+
+
+【js位置】
+9个问题 JS放在页面最后，可以加快页面打开速度。
+收起详情
+
+发现9处JS不在页面最后，建议将他们放到页面最后，<body>前：
+
+    第1处js
+
+    <script type="text/javascript" src="http://www.lasooo.cn/misc/jquery.js?v=1.4.4"></script>
+
+    第2处js
+
+    <script type="text/javascript" src="http://www.lasooo.cn/misc/jquery.once.js?v=1.2"></script>
+
+    第3处js
+
+    <script type="text/javascript" src="http://www.lasooo.cn/misc/drupal.js?mjh4vu"></script>
+
+    第4处js
+
+    <script type="text/javascript" src="http://www.lasooo.cn/sites/default/files/languages/zh-hans_YqbGWllN2hVTfdwYG4tRoOm6X24skk6FFv4neaUwEN8.js?mjh4vu"></script>
+
+    第5处js
+
+    <script type="text/javascript" src="http://www.lasooo.cn/themes/lasooo/js/page-front.js?mjh4vu"></script>
+
+    第6处js
+
+    <script type="text/javascript" src="http://www.lasooo.cn/sites/all/views/custom/lasooo/misc/navigation/navigation.view.js?mjh4vu"></script>
+
+    第7处js
+
+    <script type="text/javascript" src="http://www.lasooo.cn/sites/all/views/custom/activities/misc/activities/activities.view.js?mjh4vu"></script>
+
+    第8处js
+
+    <script type="text/javascript" src="http://www.lasooo.cn/themes/lasooo/js/light-framework.js?mjh4vu"></script>
+
+    第9处js
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"lasooo","theme_token":"ELAnwso9ZAkmX9t9CGicSkCzpotCxsayc3jib8Mko5w","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/zh-hans_YqbGWllN2hVTfdwYG4tRoOm6X24skk6FFv4neaUwEN8.js":1,"themes\/lasooo\/js\/page-front.js":1,"sites\/all\/views\/custom\/lasooo\/misc\/navigation\/navigation.view.js":1,"sites\/all\/views\/custom\/activities\/misc\/activities\/activities.view.js":1,"themes\/lasooo\/js\/light-framework.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"themes\/lasooo\/css\/channels\/frontpage.channel.css":1,"themes\/lasooo\/css\/sidebar_slideshow.region.css":1,"sites\/all\/views\/custom\/lasooo\/misc\/navigation\/navigation.view.css":1,"themes\/lasooo\/css\/views\/custom\/lasooo\/share.view.css":1,"sites\/all\/views\/custom\/lasooo\/misc\/share\/share.view.css":1,"themes\/lasooo\/css\/views\/custom\/lasooo\/uselasooo.view.css":1,"sites\/all\/views\/custom\/lasooo\/misc\/uselasooo\/uselasooo.view.css":1,"themes\/lasooo\/css\/views\/lasooo\/welfare.view.css":1,"sites\/all\/views\/custom\/lasooo\/misc\/welfare\/welfare.view.css":1,"themes\/lasooo\/css\/components\/comments.com.css":1,"sites\/all\/views\/custom\/activities\/misc\/activities\/activities.view.css":1,"themes\/lasooo\/css\/layouts\/frontpage.layout.css":1,"themes\/lasooo\/css\/960\/960.css":1,"themes\/lasooo\/css\/960\/reset.css":1,"themes\/lasooo\/css\/960\/fonts.css":1,"themes\/lasooo\/css\/block-layouts.css":1,"themes\/lasooo\/css\/headerbar-unlogged.region.css":1,"themes\/lasooo\/css\/layout.css":1,"themes\/lasooo\/css\/style.css":1,"themes\/lasooo\/css\/colors.css":1,"themes\/lasooo\/css\/print.css":1}}});
+    //--><!]]>
+    </script>
+
+
+【图片大小声明】
+1个问题 如果图片大小不做定义，则页面需要重新渲染，速度受到影响。
+收起详情
+
+发现1个图片未作大小定义，建议对其大小做定义：
+
+    第1处
+
+    <img src="http://www.lasooo.cn/themes/lasooo/logo.png" alt="首页">
+
+
+【Meta信息完善程度检测】
+meta信息不完整。缺少meta description（这可能会对网页的展现和排序产生一定影响），建议增加
+
+【图片Alt信息检测】
+图片alt信息不完整。建议为网页img标签增加alt信息（检测信息为整个页面图片，加入这项信息可使网页上的图片更容易被用户检索到）

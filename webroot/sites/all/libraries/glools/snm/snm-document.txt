@@ -1,0 +1,12 @@
+    SNM(Standard Nodes Management) library
+
+Author:Glools.Guan@glools.com
+Built date: 2011-10-24
+Drupal Version:7.x
+SNM Version:0.1
+
+Site: http://www.glools.net/ols
+
+Description:
+The library for managing nodes. It is used for render a standard nodes management list.
+The library base on "Glools-Drupal Development Standard V1".

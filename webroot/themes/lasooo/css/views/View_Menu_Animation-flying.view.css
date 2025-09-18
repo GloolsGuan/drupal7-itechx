@@ -1,0 +1,23 @@
+#view_menu_animation{
+    height:auto;
+    margin-top:10px;
+}
+#view_menu_animation .block-title{
+    display:none;
+}
+#view_menu_animation .block-content{
+    text-align:right;
+}
+#view_menu_animation .block-content a{
+    padding:3px 6px;
+    border:1px #EEE solid;
+    border-radius:5px;
+    color:#096816;
+    line-height:30px;
+    margin:0 5px;
+}
+#view_menu_animation .block-content a:hover{
+    background:#096816;
+    color:#EEE;
+    border:1px #096816 solid;
+}

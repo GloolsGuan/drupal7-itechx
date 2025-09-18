@@ -1,0 +1,12 @@
+; $Id: blog.info,v 1.12 2010/12/20 19:59:40 webchick Exp $
+name = Glools
+description = It is the basic module for glools system, base on drupal 7 system. Developed by <a href='http://www.glools.net/d7'>GLools Team</a>
+package = Glools
+version = VERSION
+core = 7.x
+configure = admin/config/glools-drupal/glools
+
+; Information added by drupal.org packaging script on 2011-01-05
+version = "7.x-0.3.2"
+project = "glools"
+datestamp = "1344525185"

@@ -1,0 +1,241 @@
+<?php
+/*
+ * Created on Sep 8, 2012
+ *
+ * menu rule:
+ * page.+ : for all single page.
+ * 
+ */
+ 
+function frontend_init(){
+    global $conf;
+    
+    debug_rdata('hello,world', class_exists('Gtools'));
+    Gtools::loadInc('funcs', 'lib', 'frontend');
+    Gtools::loadInc('theme', 'lib', 'frontend');
+    
+    _theme_lasooo_importCSS('Hello,world!');
+    
+    $requestPath = request_path();
+
+    // Special for frontpage
+    if (empty($requestPath)) {
+        Glools_Inc_Tools::loadInc('frontpage', 'channel', 'frontend');
+        
+        frontend_channel_frontpage();
+        
+    }
+    
+    Gtools::loadInc('seo', 'lib', 'glools');
+    
+    $seoData = array(
+        'keywords'    => '儿童探索, 儿童英语, 英语, 环球英语, 中文, 环球中文',
+        'description' => '发现地球村，Discovery the world from Kids view!'
+    );
+    
+    set_seo($seoData);
+    
+    if (in_array($requestPath, array('system/ajax'))) {
+        Glools_Inc_Tools::loadInc('form-element-validate', 'lib', 'glools');
+    }
+    
+    if (preg_match('/^file\/ajax\/.*/', $requestPath)) {
+        require_once(drupal_get_path('module', 'node').'/node.pages.inc');
+    }
+    
+}
+
+
+function frontend_permission(){
+    return array(
+        'Visit My Account' => array(
+            'title' => t('Visit my personal account'),
+            'description' => t('View, edit and delete all content regardless of permission restrictions.'),
+            'restrict access' => TRUE
+        )
+    );
+}
+
+
+/**
+ * 
+ * For option 'delivery callback':
+ * 'delivery callback' => 'frontend_delivery_apiservice'
+ */
+function frontend_menu(){
+    
+    return array(
+        'user/asking-register/%' => array(
+            'title' => t('Asking Register'),
+            'type' => MENU_CALLBACK,
+            'page callback' => 'frontend_register',
+            'page arguments' => array(2),
+            'access arguments' => array('access content'),
+            'file' => 'register.page.inc'
+        ),
+        'page/sys/denied' => array(
+            'title' => 'Denied to visite this page.',
+            'page callback' => 'frontend_sys_denied',
+            'page arguments' => array(3),
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'sys.page.inc'
+        ),
+        'discovery' => array(
+            'title' => t('Discovery'),
+            'type'  => MENU_CALLBACK,
+            'page callback' => 'frontend_channel_router',
+            'page arguments' => array(0, 1, 'web'),
+            'access arguments' => array('access content')
+        ),
+        'courses'=>array(
+            'title' => t('My courses'),
+            'type'  => MENU_CALLBACK,
+            'page callback' => 'frontend_channel_router',
+            'page arguments' => array(1,2,0),
+            //'delivery callback' => 'frontend_delivery_apiservice',
+            'access arguments' => array('access content')
+        ),
+        'follow' => array(
+            'title' => t('Follow'),
+            'type'  => MENU_CALLBACK,
+            'page callback' => 'frontend_channel_router',
+            'page arguments' => array(1,2,0),
+            //'delivery callback' => 'frontend_delivery_apiservice',
+            'access arguments' => array('access content')
+        ),
+        'home' => array(
+            'title' => t('Home'),
+            'type'  => MENU_CALLBACK,
+            'page arguments' => array(0),
+            'page callback' => 'frontend_channel_router',
+            'access arguments' => array('access content')
+        ),
+        'search' => array(
+            'title' => t('Search'),
+            'type'  => MENU_CALLBACK,
+            'page arguments' => array(0),
+            'page callback' => 'frontend_channel_router',
+            'access arguments' => array('access content')
+        )
+    );
+}
+
+function frontend_delivery_apiservice($content){
+    //debug_rdata(__METHOD__, $content);
+    print json_encode($content);
+}
+
+/**
+ * Channel plugin supported
+ * 
+ *  */
+function frontend_channel_router($channel, $vars=null, $request_from='web'){
+    //debug_rdata(__METHOD__, ['channel'=>$channel, 'vars'=>$vars, 'request_from'=>$request_from]);
+    Glools_Inc_Tools::loadInc($channel, 'channel', 'frontend');
+    $hook = 'frontend_channel_' . $channel;
+    if (function_exists($hook)) {
+        //debug_rdata(__METHOD__, [$hook, $vars, $request_from]);
+        return $hook($vars, $request_from);
+    }else{
+        return 'Hello,world! This is an empty page, But you are welcome!';
+    }
+}
+
+
+function frontend_forms($formId, $args){
+	
+}
+
+function frontend_form_alter($form, $form_state, $form_id){
+	drupal_add_css(path_to_theme() . '/css/components/form.com.css');
+}
+
+
+/**
+ *
+ *  */
+function frontend_node_view_alter(&$node){
+    
+    $nodeType = $node['#node']->type;
+    
+    $nodeViewAlterHook = 'node_'.$nodeType . '_view_alter';
+    
+    Glools_Inc_Tools::loadInc($nodeViewAlterHook, 'lib', 'frontend');
+    
+    $hook = 'frontend_' . $nodeViewAlterHook;
+    if (function_exists($hook)) {
+        $hook($node);
+    }
+    
+    frontend_node_viewModeStyle($node);
+}
+
+function frontend_comment_view_alter($build, $type){
+	//drupal_add_css(path_to_theme() . '/css/components/comments.com.css');
+}
+
+
+/**
+ * Layout support
+ * 
+ * The location of layout file is "THEME/templates/layouts"
+ * The first part of channel path will be as the layout, If it is not exists, the default layout "page" will be used.
+ *   */
+function frontend_layout_alter(&$layout){
+    $path = request_path();
+    
+    $reMatch = preg_match('/^([a-zA-Z0-9\-]+).+/', $path, $matched);
+    
+    if (!$reMatch) {
+    	return ;
+    }
+    
+    if ('page'==$matched[1]) {
+    	$matched[1] = 'simple';
+    }
+    
+    if (file_exists(path_to_theme(). '/templates/layouts/'.$matched[1].'.layout.php')) {
+    	$layout = $matched[1];
+    }
+}
+
+
+
+function frontend_theme(){
+    return array(
+        'block-prompting' => array(
+            'variables'=> array('title' => NULL, 'mess'=>NULL, 'links'=>array()),
+            'template' => 'promoting-page'
+        ),
+        'fblock'          => array(
+            'variables' => array('subject'=>null, 'content'=>null),
+            'template'  => 'fblock'
+        )
+    );
+}
+
+
+function frontend_preprocess_fblock(&$variables){
+    if (!empty($variables['#attributes']['class'])) {
+        array_unshift($variables['#attributes']['class'], 'block');
+    }
+}
+
+
+/**
+ * Extend single node template for supporting node--[content type]-[view mode].tpl.php
+ * The template file should be  folder "themes/[your theme package]/templates" .
+ * For backend theme, the default path of template should be "/webroot/themes/seven/templates"
+ * */
+function frontend_preprocess_node(&$variables){
+    $variables['theme_hook_suggestions'][] = 'node__'.$variables['node']->type.'_'.$variables['view_mode'];
+}
+
+
+/**
+ * @see inc_libraries/funcs.lib.inc frontend_proprocess_page_build();
+ */
+function frontend_page_build(&$vars){
+    frontend_proprocess_page_build($vars);
+}

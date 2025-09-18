@@ -1,0 +1,52 @@
+.node-blog{
+    width:100%;
+    height:auto;
+    margin-bottom:20px;
+    padding:5px 0;
+    border-bottom:1px #DDD dotted;
+}
+.node-blog h2{
+    font-size:1.2em;
+}
+.node-blog h2 a{
+    color:#096816;
+    font-weight:normal;
+}
+.node-blog .submitted{
+    font-size:0.7em;
+    color:#999;
+}
+.node-blog .user-picture{
+    float:left;
+    display:none;
+}
+.node-blog .user-picture img{
+    width:30px;
+}
+.node-blog .content{
+    margin:10px 0;
+    font-size:0.9em;
+    color:#666;
+}
+
+.node-blog .links{
+    font-size:0.8em;
+}
+.node-blog .links li{
+    float:right;
+    
+}
+.node-blog .links li a{
+    color:#999;
+    padding:3px 5px;
+    
+}
+.node-blog .links li a:hover{
+    background:#096816;
+    color:#FFF;
+    border:1px #096816 solid;
+    border-radius:5px;
+}
+.node-blog .field-name-field-activity-term{
+    display:none;
+}

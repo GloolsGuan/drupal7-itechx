@@ -1,0 +1,27 @@
+.block-view_book_contents{
+
+}
+.block-view_book_contents .block-title{
+    border-bottom:1px #096816 solid;
+    margin-bottom:15px;
+}
+.block-view_book_contents .block-title h2{
+    color:#096816;
+    line-height:40px;
+    margin-top:10px;
+    
+}
+.block-view_book_contents a{
+    font-size:1.1em;
+    color:#666;
+    /*line-height:30px;*/
+}
+
+.block-view_book_contents ul li{
+    margin-left:5px;
+    line-height:30px;
+}
+
+.block-view_book_contents ul li a.active{
+    color:#096816;
+}

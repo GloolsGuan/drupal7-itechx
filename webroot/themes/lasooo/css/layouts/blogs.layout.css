@@ -1,0 +1,46 @@
+<?php
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/header.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/main.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/fsidebar_second.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/footer.region.css');
+?>
+
+.node{
+    margin-bottom:10px;
+}
+.node h2 a{
+    color:#096816;
+}
+.node h2{
+    line-height:30px;
+    font-size:1.1em;
+}
+.node .submitted{
+    font-size:0.8em;
+}
+.node .content{
+    margin:5px 0;
+    font-size:0.9em;
+    color:#666;
+}
+.node .node-readmore{
+    float:right;
+    font-size:0.8em;
+    
+}
+
+.node .node-readmore  a{
+    color:#096816;
+}
+
+.item-list ul.pager{
+    margin-top:50px;
+    float:left;
+    width:100%;
+}
+.item-list ul.pager li:first-child{
+    margin-left:0px;
+}
+.item-list ul.pager li a{
+    color:#096816;
+}

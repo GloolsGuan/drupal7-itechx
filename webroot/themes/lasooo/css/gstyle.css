@@ -1,0 +1,90 @@
+/*--- [style.css] Global Style Define ---*/
+body,div,span,a,li{
+    font-family:"微软雅黑", "Helvetica", "Arial", "Times New Roman", "宋体", "sans-serif";
+}
+
+a,a:hover,a:active{
+    text-decoration: none;
+}
+
+.status a{
+    color:#096816;
+}
+
+.status a:hover{
+    color:#FF9900;
+}
+
+.regions-wrapper{
+    background:#ffffff;
+}
+.page-wrapper{
+    margin:0 auto;
+    /*background:url(<?php print THEME_LASOOO_PATH_IMG ?>/body_bg_repeat.jpg) repeat;*/
+}
+
+.top-wrapper{
+	background:#336666;
+	/*background:url('/misc/lasooo/bg/lasooo-top-bg.jpg') repeat-x;*/
+	/*border-bottom:2px #838B8B solid;*/
+}
+
+.top-wrapper .regions-wrapper{
+	background:none;
+}
+
+.footer-wrapper{
+    background:#292929;
+    padding:50px 0px 10px 0px;
+    margin-top: 50px;
+}
+
+/* block */
+.block{
+    width:auto;
+    height:auto;
+}
+.block .block-title{
+    font-size:1.3em;
+    color:#666;
+    line-height:30px;
+    padding:0 5px;
+}
+
+
+/* photoHandleButton */
+.photoHandleButton{
+    background: url('<?php print THEME_LASOOO_PATH_IMG ?>/icondemo.png') scroll 0 0 no-repeat transparent;
+}
+/* breadcrumb */
+.breadcrumb{
+    font-size:0.8em;
+    padding:5px;
+    line-height:8px;
+    background:#FCFCFC;
+}
+.breadcrumb a{
+    color:#999;
+}
+
+
+.rl_2c_side{
+    border-radius:8px;
+}
+/* Development */
+.rl_2c_side{
+    /*background:#EEE;*/
+}
+
+/*  fix bug  */
+.cke_skin_kama a.cke_toolbox_collapser{
+    display:none;
+}
+/*--- [style.css:end] ---*/
+
+
+/* Page background */
+.page-wrapper{
+	/*background:url('/misc/lasooo/bg/20140227-2.jpg') no-repeat;*/
+}
+/*--- End of page background ---*/

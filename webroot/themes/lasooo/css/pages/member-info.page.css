@@ -1,0 +1,22 @@
+
+#block-system-main .block .block-title{
+    border-bottom:1px #EEE solid;
+}
+
+#block-system-main .block .block-title a{
+    font-size:0.6em;
+    cursor:pointer;
+    margin-left:20px;
+    padding:3px 8px;
+    color:#096816;
+    border:1px #096816 solid;
+    border-radius:5px;
+}
+#block-system-main .block .block-title a:hover{
+    background:#096816;
+    color:#FFF;
+}
+#block-system-main .block-member-info .block-content .photo img{
+    width:300px;
+    height:auto;
+}

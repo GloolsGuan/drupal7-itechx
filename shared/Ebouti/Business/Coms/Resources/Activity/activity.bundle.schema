@@ -1,0 +1,23 @@
+<?php
+
+/* 
+ * Business Resource Schema
+ * 
+ * Service for business system, including goods,service,activity
+ * 
+ */
+
+return array(
+    'name' => 'activity',
+    'title' => 'Activity',
+    'bundle_on' => 'biz',
+    'fields' => [
+        'start_up_at' => '',
+        'end_up_at' => '',
+        'location' => '',
+        'team_leader' => '',
+        'assistant' => '',
+        'duration' => '',
+        'transportation' => ''
+    ]
+);

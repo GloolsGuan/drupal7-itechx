@@ -1,0 +1,52 @@
+#view_activities_recommended{
+    margin-top:20px;
+}
+#view_activities_recommended .block-title{
+    color:#336600;
+    line-height:40px;
+    margin-bottom:10px;
+    border-bottom:2px #DDD solid;
+}
+
+#view_activities_recommended .node{
+    background:#FFFAF0;
+    margin-bottom:20px;
+    padding:10px;
+}
+#view_activities_recommended .node .title{
+    line-height:26px;
+    font-weight:normal;
+    font-size:1.1em;
+    margin-bottom:10px;
+}
+
+#view_activities_recommended .node .title a{
+    color:#ff6600;
+}
+
+#view_activities_recommended .node .field-name-field-activity-logo .field-label{
+    display:none;
+}
+
+#view_activities_recommended .node .field-name-field-activity-logo img{
+    border:5px #EEE solid;
+    width:268px;
+}
+
+#view_activities_recommended .node .detail{
+    font-size:0.9em;
+    color:#666;
+    margin-top:5px;
+}
+#view_activities_recommended #pager li{
+    color:#666;
+}
+#view_activities_recommended #pager,
+#view_activities_recommended #pager a{
+    font-size:0.8em;
+    color:#CC0000;
+}
+#view_activities_recommended #pager li{
+    margin-left:0px;
+    padding:
+}

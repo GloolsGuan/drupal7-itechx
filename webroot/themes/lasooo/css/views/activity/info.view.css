@@ -1,0 +1,44 @@
+#view_activity_info{
+    /*height:140px;*/
+}
+#view_activity_info .block-title{
+    display:none;
+}
+#view_activity_info .block-content{
+    height:auto;
+}
+#view_activity_info .block-content>div{
+    line-height:28px;
+    font-size:0.9em;
+    border-bottom:1px #DDD dotted;
+    color:#990000;
+}
+#view_activity_info .block-content .book{
+    width:200px;
+    /*line-height:40px;*/
+    padding:10px 20px;
+    font-size:1.3em;
+    /*font-weight:bold;*/
+    color:#FFF;
+    text-align:center;
+    font-family:"微软雅黑","宋体","Arial","Helvetica Neue","Liberation Sans","FreeSans";
+    margin:20px auto;
+    background:#0060FF;
+    border-bottom:none;
+    /*background:-10px 8px url('../images/Button4.gif')  no-repeat;*/
+    /*border-bottom:2px #ddd solid;
+    border-right:1px #ddd solid;*/
+    border-radius:10px;
+}
+#view_activity_info .block-content .booked{
+    background:#FF9900;
+}
+#view_activity_info .block-content .book a,
+#view_activity_info .block-content .book a:active{
+    color:#FFF;
+    padding:8px 50px;
+    font-weight:bold;
+}
+#view_activity_info .block-content .book a:hover{
+    color:#FF9900;
+}

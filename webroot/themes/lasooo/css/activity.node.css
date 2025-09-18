@@ -1,0 +1,215 @@
+/* Global settings */
+.breadcrumb{
+    display:none; 
+}
+
+/*
+    Activity page layout define
+*/
+.node .activity-content{
+    float:left;
+    margin:0 0;
+    margin-bottom:10px;
+    
+    border-radius:8px;
+}
+
+/* 
+    activity-title 
+*/
+.node .activity-content .title{
+    font-size:1.5em;
+    color:#096816;
+    font-weight:bold;
+    text-align:center;
+    line-height:50px;
+    margin:30px 0;
+}
+.node .activity-content .submitted{
+    font-size:0.8em;
+    color:#999;
+    text-align:center;
+}
+
+/* --- */
+
+
+/*
+    activity-content
+*/
+/* .activity-content .photos */
+.node .activity-content .photos{
+    width:680px;
+    height:auto; /*460px*/
+    float:left;
+    margin-top:10px;
+}
+
+.node .activity-content .photos .photos-navigation{
+    width:680px;
+    height:60px;
+    background:#383838;
+}
+
+/* .activity-content .photos .field-name-field-activity-logo */
+.node .activity-content .photos .field-name-field-activity-logo{
+    background:#383838;
+    text-align:center;
+    padding:20px 0;
+}
+.node .activity-content .photos .field-name-field-activity-logo .field-label{
+    display:none;
+}
+.node .activity-content .photos .field-name-field-activity-logo .field-items img{
+    /*width:680px;
+    height:400px;*/
+    width:auto;
+    height:auto;
+    max-width:680px;
+    min-height:300px;
+    
+}
+/* .activity-content .photos .photos-navigation .field-name-field-activity-ext-logos */
+.activity-content .photos .photos-navigation .handleLeft,
+.activity-content .photos .photos-navigation .handleRight{
+    width:18px;
+    height:60px;
+    text-align:center;
+    font-size:1.5em;
+    line-height:60px;
+    float:left;
+    background:#EEE;
+    color:#0060FF;
+}
+.activity-content .photos .photos-navigation .handleLeft{
+    border-right:2px #DDD solid;
+    cursor:pointer;
+}
+.activity-content .photos .photos-navigation .handleRight{
+    border-left:2px #DDD solid;
+    cursor:pointer;
+}
+.activity-content .photos .photos-navigation .field-name-field-activity-ext-logos{
+    border-top: 3px solid #525252;
+    float: left;
+    height: 57px;
+    overflow: hidden;
+    padding-left: 3px;
+    width: 676px;
+}
+.activity-content .photos .photos-navigation .field-name-field-activity-ext-logos .field-label{
+    display:none;
+}
+.activity-content .photos .photos-navigation .field-name-field-activity-ext-logos .field-items img{
+    width:67px;
+    height:50px;
+}
+.activity-content .photos .photos-navigation .field-name-field-activity-ext-logos .field-items .field-item{
+    width:67px;
+    height:50px;
+    overflow:hidden;
+    margin-top:1px;
+    margin:1px 2px 0px 2px;
+    padding:2px;
+    float:left;
+    cursor:pointer;
+}
+.activity-content .photos .photos-navigation .field-name-field-activity-ext-logos .field-items .field-item.active{
+    background:#FF9900;
+}
+
+
+/* ---- */
+.node .activity-content .detail{
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 8px 8px 8px 8px;
+    border-top: 20px solid #DDD;
+    border-bottom:5px solid #DDD;
+    color: #666666;
+    float: left;
+    font-size: 1.1em;
+    line-height: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 660px;
+}
+/* ---- */
+
+/*
+    activity-content style
+*/
+
+
+
+.node .link-wrapper{
+    float:right;
+    width:340px;
+}
+
+/*
+    block: block-submitted
+*/
+.node .block-submitted{
+    font-size:1.2em;
+    line-height:20px;
+    padding-bottom:20px;
+
+}
+
+.node .block-submitted .block-title{
+    font-size:1.2em;
+    color:#096816;
+    line-height:30px;
+}
+.node .block-submitted .block-content{
+
+}
+.node .block-submitted .user-picture{
+    margin-right:10px;
+    height:50px;
+    width:50px;
+    float:left;
+}
+.node .block-submitted .user-picture img{
+    width:50px;
+    height:50px;
+    /*border:3px #FFFFFF solid;*/
+    /*margin:8px;*/
+}
+
+.node .block-submitted span{
+    font-size:1.1em;
+    line-height:50px;
+}
+
+/*  Comment  */
+#comments{
+    width:610px;
+}
+.node .comment-wrapper{
+    clear:both;
+    margin-top:40px;
+}
+
+#comments form .filter-wrapper{
+    display:none;
+}
+
+/* Links */
+.links .comment_forbidden{
+    line-height:30px;
+    font-size:0.9em;
+    border:1px #DDD solid;
+    border-radius:5px;
+    background:#EEE;
+    float:right;
+    color:#666;
+}
+.links .comment-add{
+    display:none;
+}
+.links .comment_forbidden a{
+    color:#096816;
+}
+
+

@@ -1,0 +1,48 @@
+<?php
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+function course_menu(){
+    return array(
+        //-- For course learning --
+        'course/%course_id' => array(
+            'title' => 'Course Home',
+            'description' => t('Course home page'),
+            'type' => MENU_CALLBACK,
+            //'page callback' => 'glools_config_default',
+            'access arguments' => array('access content'),
+        ),
+        'courses/%tag' => array(
+            'title' => 'Glools module settings',
+            'type' => MENU_CALLBACK,
+            'description' => t('Hello,world!'),
+            'page callback' => 'glools_config_default',
+            'access arguments' => array('access content')
+        ),
+        'courses/joined' => array(
+            'title' => 'I joined courses',
+            'type' => MENU_CALLBACK,
+            'description' => t('Hello,world!'),
+            'page callback' => 'glools_config_default',
+            'access arguments' => array('access content')
+        ),
+        'courses/discovery' => array(
+            'title' => 'Discovery courses',
+            'type' => MENU_CALLBACK,
+            'description' => t('Hello,world!'),
+            'page callback' => 'glools_config_default',
+            'access arguments' => array('access content')
+        ),
+        'courses/following' => array(
+            'title' => 'I favorite courses',
+            'type' => MENU_CALLBACK,
+            'description' => t('Hello,world!'),
+            'page callback' => 'glools_config_default',
+            'access arguments' => array('access content')
+        ),
+    );
+}

@@ -1,0 +1,15 @@
+.block-secondary_menu{
+    height:30px;
+    line-height:30px;
+}
+.block-secondary_menu .block-title{
+    display:none;
+}
+.block-secondary_menu .block-content{
+    border-bottom:1px #FF9900 solid;
+}
+.block-secondary_menu .block-content .menu-item{
+    width:45px;
+    float:right;
+    text-align:center;
+}

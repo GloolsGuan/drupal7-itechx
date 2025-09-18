@@ -1,0 +1,38 @@
+.block-main_menu{
+    height:30px;
+    line-height:30px;
+    width:300px;
+    float:right;
+    margin:10px 15px 0 0;
+}
+.block-main_menu .block-title{
+    display:none;
+}
+.block-main_menu .block-content{
+    height:30px;
+}
+.block-main_menu .block-content .menu-item{
+    width:auto;
+    float:right;
+    /*height:30px;*/
+    
+    text-align:center;
+    /*border-bottom:1px #999999 solid;*/
+}
+.block-main_menu .block-content .menu-item img{
+    width:24px;
+    height:24px;
+    margin-top:4px;
+    float:left;
+}
+.block-main_menu .block-content .menu-item a{
+    padding:5px 10px;
+    border-radius:5px;
+}
+.block-main_menu .block-content .menu-item.menu-item-my_account{
+    padding-left:10px;
+}
+.block-main_menu .block-content .menu-item.menu-item-my_account a:hover{
+    background:none;
+}
+

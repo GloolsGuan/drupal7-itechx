@@ -1,0 +1,168 @@
+<?php
+
+/**
+ * Glools module is the main startup module for glools-drupal framework.
+ * @version:0.3.2
+ * @author: GloolsGuan@glools.com
+ * */
+ 
+
+define('GLOOLS_DIR_LIB', DRUPAL_ROOT.'/sites/all/libraries');
+define('GLOOLS_DIR_VIEWS', DRUPAL_ROOT.'/sites/all/views');
+
+if (file_exists(GLOOLS_DIR_LIB.'/glools/load.lib.inc')) {
+	require_once(GLOOLS_DIR_LIB.'/glools/load.lib.inc');
+}else{
+	watchdog('warning', 'Glools framework located in "/sites/all/libraries/glools" does not installed.', $vars, WATCHDOG_WARNING);
+    drupal_set_message('warning', 'Glools framework located in "/sites/all/libraries/glools" is a part of glools module, It should be installed before you installing the glools module.');
+}
+
+require_once(dirname(__FILE__).'/inc_libraries/funcs.lib.inc');
+require_once(dirname(__FILE__).'/inc_libraries/core-fixbug.lib.inc');
+require_once(dirname(__FILE__).'/inc_libraries/device.lib.inc');
+//--
+
+
+
+function glools_init(){
+    global $conf;
+    ///glools_device_init();
+    //variable_set('theme', 'lasooo');
+    //debug_rdata(__FUNCTION__, [$theme, $theme_key]);
+    //$theme = 'bootstrap';
+    //$theme_key = 'bootstrap';
+   
+}
+
+function glools_custom_theme(){
+    global $conf;
+    glools_device_init();
+    //debug_rdata(__FUNCTION__, array_keys($conf));
+    if(array_key_exists('runtime_theme', $conf)){
+        debug_rdata(__FUNCTION__, $conf['runtime_theme']);
+        $runtime_theme = $conf['runtime_theme'];
+        return array($runtime_theme['theme']);
+    }
+    
+    return null;
+}
+
+
+function glools_menu(){
+	return array(
+        'admin/config/glools-drupal' => array(
+            'title' => 'Glools-drupal framework settings',
+            'description' => t('Glools-drupal framework settings'),
+            //'page callback' => 'glools_config_default',
+            'access arguments' => array('administer site configuration'),
+            'type' => MENU_NORMAL_ITEM,
+            //'file' => 'glools-config.admin.inc'
+        ),
+        'admin/config/glools-drupal/glools' => array(
+            'title' => 'Glools module settings',
+            'description' => t('Glools-drupal framework and glools module settings'),
+            'page callback' => 'glools_config_default',
+            'access arguments' => array('administer site configuration'),
+            'type' => MENU_NORMAL_ITEM,
+            'file' => 'glools-config.admin.inc'
+        ),
+    );
+}
+
+
+/**
+ * Load glools modified drupal core theme library
+ * */
+if (module_exists('glools')) {
+    Glools_Inc_Tools::loadInc('drupal-theme', 'lib', 'glools');
+}
+
+
+function glools_theme(){
+    return array(
+        'glools_item_list' => array(
+            'variables' => array('items' => array(), 'title' => NULL, 'type' => 'ul', 'attributes' => array(), 'cAttributes'=>array())
+        ),
+        'glools_form_wrapper' => array(
+            'render element' => 'element'
+        ),
+        'glools_form_tpl' => array(
+            'variables' => array('vars'=>array()),
+            'template' => 'glools-form'
+        ),
+        'div'  => array(
+            'variables' => array('vars'=>array()),
+            'template'  => 'glools-div'
+        )
+    );
+}
+
+function glools_forms($formId, $args) {
+    $forms = array();
+    
+    $formArgs = explode('_', $formId);
+    
+    if (module_exists($formArgs[0]) && file_exists(drupal_get_path('module', $formArgs[0]) . '/inc_forms/' . $formId . '.form.inc')) {
+        Glools_Inc_Tools::loadInc($formId, 'form', $formArgs[0]);
+        $forms[$formId] = array('callback'=>$formId);
+    }
+    
+    
+    
+    return $forms;
+}
+
+function glools_form_validate(&$form, &$form_state){
+	$formId = $form['#form_id'];
+    drupal_add_css(path_to_theme() . '/css/components/form.com.css');
+    $formArgs = explode('_', $formId);
+    
+    if (module_exists($formArgs[0]) && file_exists(drupal_get_path('module', $formArgs[0]) . '/inc_forms/' . $formId . '.form.inc')) {
+        Glools_Inc_Tools::loadInc($formId, 'form', $formArgs[0]);
+        
+        $hook = $formId . '_validate';
+        
+        $hook($form, $form_state);
+    }
+}
+
+function glools_form_submit(&$form, &$form_state, $formId){
+	$formId = $form['#form_id'];
+    $formArgs = explode('_', $formId);
+    if (module_exists($formArgs[0]) && file_exists(drupal_get_path('module', $formArgs[0]) . '/inc_forms/' . $formId . '.form.inc')) {
+        Glools_Inc_Tools::loadInc($formId, 'form', $formArgs[0]);
+        
+        $hook = $formId . '_submit';
+        
+        $hook($form, $form_state);
+    }
+}
+
+function glools_form_element_validate_ajax_callback($element, $form_state){
+    $commands = glools_form_ajax_render($element, $form_state);
+    //debug_record_data(__FUNCTION__, $commands);
+    return array(
+        '#type'     => 'ajax',
+        '#commands' => $commands
+    );
+}
+
+/**
+ * Fix bug for "image style derivative""
+ * */
+function glools_file_insert($file){
+    if('image/jpeg'!=$file->filemime) {
+    	return ;
+    }
+    return glools_build_imageStyles($file);
+}
+
+function glools_file_update($file){
+	if('image/jpeg'!=$file->filemime) {
+        return ;
+    }
+    return glools_build_imageStyles($file);
+}
+/* --  [end]  -- */
+
+

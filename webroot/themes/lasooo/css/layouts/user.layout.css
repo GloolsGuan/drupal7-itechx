@@ -1,0 +1,61 @@
+<?php
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/header.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/main.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/footer.region.css');
+?>
+
+#region-main{
+    width:920px;
+    padding:20px;
+}
+.breadcrumb{
+    display:none;
+}
+#user-login{
+    width:500px;
+    height:auto;
+    overflow:hidden;
+    margin:0 auto;
+    padding:20px;
+    border:5px #9ACD32  solid;
+    border-radius:8px;
+}
+#user-login .form-item label{
+    width:120px;
+}
+#user-login fieldset.captcha{
+	margin-top:30px;
+}
+#user-login fieldset.captcha .form-item label{
+	width:auto;
+}
+#user-login fieldset.captcha span{
+	display:none;
+}
+form input.form-text{
+    height:26px;
+    width:200px;
+    line-height:26px;
+    font-size:1em;
+}
+
+form input.form-submit{
+    cursor:pointer;
+    border:1px #ddd SOLID;
+    border-radius:5px;
+    background:#EEE;
+    font-size:1.2em;
+    padding:4px 20px;
+}
+
+#user-login .form-actions a{
+	padding:5px 10px;
+	border:1px #DDD solid;
+	border-radius:5px;
+	margin:0 10px;
+	color:#666;
+}
+#user-login .form-actions a:hover{
+	background:#ddd;
+	color:#525252;
+}

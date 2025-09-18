@@ -1,0 +1,5 @@
+<?php
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/header.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/main-member.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/footer.region.css');
+?>

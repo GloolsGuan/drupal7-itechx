@@ -1,0 +1,153 @@
+.region-main .block-view_activities_activities{
+    margin-top:20px;
+}
+.region-main .block-view_activities_activities .block-title{
+    padding:10px;
+    margin-bottom:10px;
+    color:#096816;
+    border-bottom:1px #096816 solid;
+}
+.region-main .block-view_activities_activities .block-title .cities{
+    margin-left:10px;
+    padding:3px 8px;
+    font-size:0.6em;
+    border:1px #DDD solid;
+    cursor:pointer;
+}
+.region-main .block-view_activities_activities .block-title .cities a{
+    color:#096816;
+}
+.region-main .block-view_activities_activities .node .field-label{
+    display:none;
+}
+.region-main .block-view_activities_activities .node{
+    border: 2px solid #EEEEEE;
+    box-shadow: 3px 3px 7px #DDD;
+    float: left;
+    height: 266px;
+    margin: 18px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.region-main .block-view_activities_activities .node .field-name-field-activity-logo{
+    height:200px;
+    overflow:hidden;
+}
+.region-main .block-view_activities_activities .node .field-name-field-activity-logo img{
+    width:200px;
+    height:200px;
+}
+.region-main .block-view_activities_activities .node .node-content .info-background,
+.region-main .block-view_activities_activities .node .node-content .info{
+    position:absolute;
+    margin-top:-50px;
+    height:40px;
+    display:none;
+    color:#666;
+    width:190px;
+    padding:5px;
+    /*background:#EEE;*/
+    font-size:0.8em;
+}
+.region-main .block-view_activities_activities .node .node-content .info-background{
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:0.7;
+    background:#eee;
+}
+.region-main .block-view_activities_activities .node .node-content .info span,
+.region-main .block-view_activities_activities .node .node-content .info div
+{
+    width:auto;
+    display:inline;
+}
+
+.region-main .block-view_activities_activities .node .node-content .info .field-name-field-city{
+    color:#990000;
+    padding:0;
+}
+.region-main .block-view_activities_activities .node .node-content .info .field-items{
+    padding:0;
+}
+.region-main .block-view_activities_activities .node .node-content .info .field-label{
+    display:none;
+}
+
+.region-main .block-view_activities_activities .node .node-content .showSlide{
+    background-position: -20px -1893px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    display: none;
+    height: 24px;
+    margin-left: 174px;
+    margin-top: -26px;
+    opacity: 0.8;
+    position: absolute;
+    width: 24px;
+}
+
+.region-main .block-view_activities_activities .node .title a,
+.region-main .block-view_activities_activities .node .title a:active{
+    color:#555;
+}
+.region-main .block-view_activities_activities .node .title a:hover{
+    color:#FF9900;
+}
+
+/* -- slide-content -- */
+.block-view_activities_activities .node .slide-content{
+
+}
+.region-main .block-view_activities_activities .node .slide-content .creator{
+    height:58px;
+    width:50px;
+    overflow:hidden;
+    float:left;
+    margin-top:4px;
+    margin-left:4px;
+    background:#EEE;
+    /*border:1px #DDD solid;*/
+    text-align:center;
+}
+.region-main .block-view_activities_activities .node .slide-content .creator img{
+    width:50px;
+    height:40px
+    
+}
+.region-main .block-view_activities_activities .node .slide-content .creator span{
+    font-size:0.8em;
+    color:#096816;
+    line-height:10px;
+}
+.region-main .block-view_activities_activities .node .slide-content .fee{
+    width:auto;
+    font-size:1.2em;
+    float:right;
+    margin-top:3px;
+    margin-right:3px;
+    color:#666;
+}
+.region-main .block-view_activities_activities .node .slide-content .area{
+    width:50px;
+    font-size:0.8em;
+    float:left;
+    text-align:center;
+    overflow:hidden;
+    padding:0px 6px;
+    line-height:26px;
+}
+.region-main .block-view_activities_activities .node .slide-content .area a{
+    color:#096816;
+}
+.region-main .block-view_activities_activities .node .slide-content .summary{
+    width:134px;
+    float:left;
+    /*display:none;*/
+    height: 30px;
+    line-height:15px;
+    padding: 0 6px;
+    font-size:0.8em;
+    color:#999;
+    overflow:hidden;
+}

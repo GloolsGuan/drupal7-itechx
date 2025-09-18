@@ -1,0 +1,161 @@
+.node{
+
+}
+.node .field-label{
+    display:none;
+}
+/* headerlinks */
+.node .headerlinks{
+    height:30px;
+    border:1px #EEE dotted;
+    display:block;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+.node .headerlinks li{
+    float:left;
+    line-height:30px;
+    margin:0 5px;
+    padding:0 5px;
+}
+.node .headerlinks li a{
+    color:#0060FF;
+    font-size:1em;
+}
+.node .headerlinks li a:hover{
+    color:#FF9900;
+}
+/*  --  */
+
+/* meta */
+.node .meta{
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    margin:0 0 10px 20px;
+    float:right;
+    display:none;
+    border:2px #EEE solid;
+}
+
+.node .meta .user-picture{
+    width:100px;
+    height:80px;
+    text-align:center;
+}
+.node .meta .user-picture img{
+    width:80px;
+    height:80px;
+}
+.node .meta span{
+    font-size:0.8em;
+    color:#999;
+}
+.node .meta span a{
+    color:#0060FF;
+    display:block;
+    text-align:center;
+}
+/*  --  */
+
+/* content */
+
+.node .content{
+    line-height:20px;
+    color:#666;
+    margin-top:20px;
+}
+.node .content .title{
+    font-size:1.2em;
+    color:#666;
+    display:block;
+    line-height:30px;
+    text-align:center;
+}
+.node .content .submitted{
+    font-size:0.7em;
+    color:#999;
+    display:block;
+    text-align:center;
+}
+.node .content .field-name-body{
+    font-size:0.9em;
+    margin:20px 0;
+}
+.node .content .field-name-field-activity-term{
+    display:none;
+}
+/*  --  */
+
+/* links */
+.node .link-wrapper{
+    height:30px;
+    display:block;
+    margin:20px 0;
+    /*border-bottom:1px #DDD dotted;*/
+}
+
+.node .links li{
+    float:right;
+    line-height:30px;
+    margin:0 5px;
+}
+.node .links li a{
+    color:#0060FF;
+    font-size:0.8em;
+    padding:5px 8px;
+    background:#EEE;
+    border:1px #EEE solid;
+    border-radius:5px;
+}
+.node .links li a:hover{
+    color:#FF9900;
+    background:#EEE;
+}
+/*  --  */
+/* comment */
+.node .comment-wrapper{
+    color:#999;
+    
+}
+.node .comment-wrapper h2{
+    display:none;
+}
+.node #comments{
+    margin-top:30px;
+}
+.node #comments label{
+    font-weight:normal;
+}
+.node #comments form .form-text{
+    border:1px #DDD solid;
+    height:30px;
+    font-size:1.2em;
+    line-height:30px;
+    width:95%;
+}
+.node #comments form .form-textarea{
+    border:1px #DDD solid;
+    font-size:1em;
+    line-height:20px;
+    width:95%;
+}
+.node #comments form .grippie{
+    width:95%;
+    border:none;
+}
+.node #comments form .form-submit{
+    padding:0 15px;
+    color:#888;
+    font-size:1em;
+    line-height:30px;
+    border:1px #EEE solid;
+    margin-right:20px;
+}
+.node #comments form .form-submit:hover{
+    background:#EEE;
+    cursor:pointer;
+    color:#FF9900;
+}
+/*  --  */

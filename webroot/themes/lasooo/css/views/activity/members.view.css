@@ -1,0 +1,37 @@
+#view_activity_members{
+    
+}
+
+#view_activity_members .block-content{
+    color:#096816;
+}
+#view_activity_members .state{
+    color:#096816;
+    font-size:1.1em;
+    line-height:30px;
+}
+#view_activity_members .newbies-content{
+
+}
+#view_activity_members .newbies-content .title{
+    font-size:1.1em;
+    line-height:30px;
+}
+#view_activity_members .newbies .newbie{
+    width:60px;
+    height:60px;
+    float:left;
+    margin-left:20px;
+    border-radius:5px;
+    border:1px #EEE SOLID;
+    overflow:hidden;
+}
+
+#view_activity_members .newbies .newbie:first-child{
+    margin-left:0px;
+}
+
+#view_activity_members .newbies img{
+    width:60px;
+    height:60px;
+}

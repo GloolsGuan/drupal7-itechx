@@ -1,0 +1,122 @@
+.region-main .block-view_activities_activities{
+    margin-top:20px;
+}
+.region-main .block-view_activities_activities .block-title{
+    padding:10px;
+    margin-bottom:10px;
+    color:#096816;
+    border-bottom:1px #096816 solid;
+}
+.region-main .block-view_activities_activities .block-title .cities{
+    margin-left:10px;
+    padding:3px 8px;
+    font-size:0.6em;
+    border:1px #DDD solid;
+    cursor:pointer;
+}
+.region-main .block-view_activities_activities .node .field-label{
+    display:none;
+}
+.region-main .block-view_activities_activities .node{
+    border: 2px solid #EEEEEE;
+    box-shadow: 3px 3px 7px #999999;
+    float: left;
+    height: 200px;
+    margin: 18px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.region-main .block-view_activities_activities .node .field-name-field-activity-logo{
+    height:200px;
+    overflow:hidden;
+}
+.region-main .block-view_activities_activities .node .field-name-field-activity-logo img{
+    width:200px;
+    height:200px;
+}
+.region-main .block-view_activities_activities .node .node-content .info-background,
+.region-main .block-view_activities_activities .node .node-content .info{
+    position:absolute;
+    margin-top:-50px;
+    height:40px;
+    display:none;
+    color:#666;
+    width:190px;
+    padding:5px;
+    /*background:#EEE;*/
+    font-size:0.8em;
+}
+.region-main .block-view_activities_activities .node .node-content .info-background{
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:0.7;
+    background:#eee;
+}
+.region-main .block-view_activities_activities .node .node-content .info span,
+.region-main .block-view_activities_activities .node .node-content .info div
+{
+    width:auto;
+    display:inline;
+}
+
+.region-main .block-view_activities_activities .node .node-content .info .field-name-field-city{
+    color:#990000;
+    padding:0;
+}
+.region-main .block-view_activities_activities .node .node-content .info .field-items{
+    padding:0;
+}
+.region-main .block-view_activities_activities .node .node-content .info .field-label{
+    display:none;
+}
+
+.region-main .block-view_activities_activities .node .node-content .showSlide{
+    background-position: -20px -1893px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    display: none;
+    height: 24px;
+    margin-left: 174px;
+    margin-top: -26px;
+    opacity: 0.8;
+    position: absolute;
+    width: 24px;
+}
+
+.region-main .block-view_activities_activities .node .title a,
+.region-main .block-view_activities_activities .node .title a:active{
+    color:#555;
+}
+.region-main .block-view_activities_activities .node .title a:hover{
+    color:#FF9900;
+}
+
+/* -- slide-content -- */
+.block-view_activities_activities .node .slide-content{
+
+}
+.region-main .block-view_activities_activities .node .slide-content .creator{
+    height:110px;
+    width:80px;
+    overflow:hidden;
+    float:left;
+    margin-top:10px;
+    margin-left:10px;
+}
+.region-main .block-view_activities_activities .node .slide-content .creator img{
+    width:80px;
+}
+.region-main .block-view_activities_activities .node .slide-content .creator span{
+    font-size:0.9em;
+    color:#096816;
+    line-height:30px;
+}
+.region-main .block-view_activities_activities .node .slide-content .summary{
+    width:190px;
+    float:right;
+    height:88px;
+    padding:6px;
+    font-size:0.9em;
+    color:#666;
+}

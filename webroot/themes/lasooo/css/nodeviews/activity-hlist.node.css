@@ -1,0 +1,102 @@
+.node.node-activity{
+    height:110px;
+    margin-bottom:20px;
+    border-bottom:1px #DDD dotted;
+    overflow:hidden;
+}
+
+.node.node-activity .logo{
+    width:120px;
+    height:100px;
+    overflow:hidden;
+    margin-right:10px;
+    float:left; 
+}
+.node.node-activity .logo img{
+    width:auto;
+    height:100px;
+}
+
+.node.node-activity .title{
+    width: 400px;
+    line-height: 30px;
+    float: left;
+    overflow: hidden;
+    height: 30px;
+}
+
+.node.node-activity .title a{
+    color:#525252;
+}
+
+.node.node-activity .field-name-field-city{
+    margin-left:10px;
+    float:right;
+}
+.node.node-activity .field-name-field-city .field-label{
+    display:none;
+}
+
+.node.node-activity .field-name-field-city li a{
+    padding:2px 5px;
+    /*background:#EEE;*/
+    font-size:0.8em;
+    
+    line-height:30px;
+    color:#096816;
+}
+
+.node.node-activity .normalInfo,
+.node.node-activity .state,
+.node.node-activity .actions{
+    width:450px;
+    float:left;
+}
+
+.node.node-activity .normalInfo,
+.node.node-activity .state{
+    font-size:0.8em;
+    color:#666;
+}
+
+.node.node-activity .normalInfo .field{
+    width:50%;
+    float:left;
+}
+
+.node.node-activity .normalInfo .field .field-label{
+    font-weight:normal;
+}
+
+.node.node-activity .normalInfo .field a{
+    color:#096816;
+}
+
+.node.node-activity .state{
+    margin-top:6px;
+}
+
+.node.node-activity .actions{
+    text-align:right;
+    margin-top:6px;
+}
+
+.node.node-activity .actions a{
+    margin-left:10px;
+    padding:3px 5px;
+    font-size:0.8em;
+    background:#EEE;
+    color:#096816;
+    border-radius:5px;
+}
+
+.node.node-activity .actions a:hover{
+    background:#91c100;
+    color:#FFF;
+}
+
+.node.node-activity .actions a span{
+    color:#666;
+    font-size:0.8em;
+    margin-left:5px;
+}

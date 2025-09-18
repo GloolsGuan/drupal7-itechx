@@ -1,0 +1,102 @@
+#view_advertisement_slide_promotedactivity{
+    width:930px;
+    height:280px;
+    overflow:hidden;
+    /*border-top:2px #ff0000 solid;*/
+    /*border-bottom:2px #999 solid;*/
+    /*padding-bottom:20px;*/
+    padding: 15px 15px;
+    background:#262626;/* #FFEBCD;*/
+    /*border-bottom:1px #360 SOLID;*/
+}
+
+#view_advertisement_slide_promotedactivity .block-content{
+    height:100%;
+    width:auto;
+    overflow:hidden;
+}
+#view_advertisement_slide_promotedactivity .slideContainer .slideContent{
+    height:280px;
+}
+#view_advertisement_slide_promotedactivity .item{
+    width:930px;
+    height:280px;
+    overflow:hidden;
+    float:left;
+}
+#view_advertisement_slide_promotedactivity .item .activity_logo img{
+    max-width:600px;
+    height:270px;
+    
+    border:5px #DDD solid;
+}
+#view_advertisement_slide_promotedactivity .item .logo{
+    float:left;
+}
+/*
+#view_advertisement_slide_promotedactivity .item .introbg{
+    position:absolute;
+    width:300px;
+    height:260px;
+    padding:10px;
+    margin-left:610px;
+    margin-top:-280px;
+    filter:alpha(opacity=40);
+    -moz-opacity:0.4;
+    opacity:0.4;
+    background:#FFF;
+}*/
+#view_advertisement_slide_promotedactivity .item .intro{
+    width:300px;
+    height:260px;
+    padding:10px;
+    color:#EEE;
+    float:right;
+    line-height:26px;
+}
+
+#view_advertisement_slide_promotedactivity .item .intro .title{
+    font-size:1.1em;
+    margin-bottom:20px;
+
+    /*font-weight:bold;*/
+}
+
+#view_advertisement_slide_promotedactivity .item .intro a,
+#view_advertisement_slide_promotedactivity .item .intro a:hover{
+    color:#FFB90F; /*#EEAD0E*/
+    clear:both;
+}
+
+/*
+    handlers style
+*/
+#view_advertisement_slide_promotedactivity  .handlers{
+    position:absolute;
+    color:#ffffff;
+    width:90px;
+    height:30px;
+    margin-top:-30px;
+    margin-left:840px;
+    /*margin-top:246px;
+    margin-left:864px;*/
+    /*border:1px #FF0000 solid;*/
+}
+#view_advertisement_slide_promotedactivity .handlers div{
+    width:40px;
+    height:30px;
+    background:#999;
+    cursor:pointer;
+    border-radius:10px;
+    position:relative;
+    float:left;
+    font-size:1em;
+    line-height:30px;
+    text-align:center;
+}
+#view_advertisement_slide_promotedactivity .handlers div:first-child{
+    margin-right:10px;
+}
+#view_advertisement_slide_promotedactivity .handlers div.handlerActive{
+    background:#360;
+}

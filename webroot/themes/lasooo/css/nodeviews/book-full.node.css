@@ -1,0 +1,63 @@
+.node .submitted{
+    display:none;
+}
+.node a{
+    color:#096816;
+}
+.node .title h2{
+    font-size:1.5em;
+    color:#096816;
+    line-height:35px;
+    text-align:center;
+    margin-bottom:20px;
+    font-weight:normal;
+}
+
+.node .field-name-body{
+    /*font-size:1.2em;*/
+    color:#525252;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.node .book-navigation ul{
+    padding-left:20px;
+    margin-bottom:15px;
+}
+.node .book-navigation ul li{
+    line-height:30px;
+    margin-left:5px;
+}
+
+.node .comment-wrapper{
+    display:none;
+}
+
+.node .book-navigation a{
+    font-size:0.9em;
+}
+.node .book-navigation .page-next,
+.node .book-navigation .page-previous{
+    width:auto;
+    max-width:45%;
+    
+}
+.node .book-navigation .page-up{
+    width:8%;
+}
+
+.node ul.links{
+    font-size:0.9em;
+}
+
+.node ul.links li{
+    line-height:50px;
+}
+.node ul.links li a{
+    padding:3px 5px;
+    border-radius:3px;
+}
+.node ul.links li a:hover{
+    background:#EEE;
+    
+}

@@ -1,0 +1,134 @@
+.breadcrumb{
+    margin-bottom:5px;
+    background:#EEE;
+}
+#view_activities_list .block-title{
+    margin-bottom:16px;
+    border-bottom:2px #DDD solid;
+}
+#view_activities_list .node{
+    border-bottom:1px #DDD SOLID;
+    margin-bottom:30px;
+    height:140px;
+    overflow:hidden;
+}
+
+#view_activities_list .node .logo{
+    width:150px;
+    height:130px;
+    margin-right:20px;
+    overflow:hidden;
+    float:left;
+}
+#view_activities_list .node .logo img{
+    width:150px;
+    height:130px;
+}
+
+#view_activities_list .node .title{
+    width:620px;
+    height:50px;
+    /*line-height:20px;*/
+    margin-bottom:10px;
+}
+
+#view_activities_list .node .title a{
+    color:#336600;
+    font-size:1.15em;
+}
+#view_activities_list .node .type,
+#view_activities_list .node .time,
+#view_activities_list .node .location,
+#view_activities_list .node .participant-follower{
+    font-size:0.9em;
+    color:#666;
+}
+#view_activities_list .node .activity-level{
+    position: absolute;
+    height: 28px;
+    width: 150px;
+    background: #eff;
+    text-align:center;
+    line-height:28px;
+    margin-top: -16px;
+}
+
+/* 
+    activity node field style
+*/
+#view_activities_list .node .field{
+    width:auto;
+    height:20px;
+    overflow:hidden;
+}
+#view_activities_list .node .field .field-label,
+#view_activities_list .node .field .field-items,
+#view_activities_list .node .field .links,
+#view_activities_list .node .field .links a{
+    font-weight:normal;
+    font-size:0.9em;
+    color:#666;
+    float:left;
+}
+#view_activities_list .node .field .links a {
+    color:#336600;
+}
+/* -- */
+#view_activities_list .node .owner{
+    width:100px;
+    height:80px;
+    position:absolute;
+    margin-top:-70px;
+    margin-left:520px;
+    /*border:1px #ddd solid;*/
+    /*background:#EEE;*/
+    overflow:hidden;
+    /*border-radius:8px;*/
+}
+#view_activities_list .node .owner .user-picture{
+    width:60px;
+    height:60px;
+    margin:0 auto;
+    overflow:hidden;
+    /*float:left;*/
+    border:0px #EEE solid;
+    border-radius:8px;
+    
+    overflow:hidden;
+}
+
+#view_activities_list .node .owner .user-picture img{
+    width:60px;
+    height:60px;
+}
+
+#view_activities_list .node .owner .user-name{
+    float:left;
+    font-size:0.9em;
+    line-height:26px;
+    width:100%;
+    text-align:center;
+}
+#view_activities_list .node .owner .user-name a{
+    color:#666;
+}
+#view_activities_list .node .owner .level{
+    float:right;
+    width:120px;
+}
+
+#view_activities_list #pager li{
+    color:#666;
+    background:#EEE;
+    border:1px #DDD solid;
+    border-radius:5px;
+}
+#view_activities_list #pager,
+#view_activities_list #pager a{
+    font-size:0.9em;
+    color:#CC0000;
+}
+#view_activities_list #pager li{
+    margin-left:0px;
+    padding:
+}

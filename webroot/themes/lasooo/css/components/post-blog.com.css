@@ -1,0 +1,86 @@
+.node-blog-form{
+    color:#777;
+}
+.node-blog-form .description,
+.node-blog-form .fieldset-description{
+    font-size:0.8em;
+}
+.node-blog-form label{
+    color:#990000;
+    font-weight:normal;
+}
+.node-blog-form input.form-file{
+    margin-right:20px;
+}
+
+.node-blog-form .form-item-title label,
+.node-blog-form .form-item-language label,
+.node-blog-form .field-name-field-blog-logo label{
+    float:left;
+    width:80px;
+    font-weight:normal;
+    
+}
+
+.node-blog-form .form-item-title,
+.node-blog-form .form-item-language{
+    line-height:30px;
+    height:30px;
+}
+.node-blog-form .form-item-title input{
+    height:28px;
+    border:1px #DDD solid;
+    
+}
+.node-blog-form .field-name-field-blog-logo .description{
+    margin-left:100px;
+    margin-top:8px;
+}
+
+.node-blog-form .field-name-field-blog-logo input{
+    border:1px #DDD solid;
+    cursor:pointer;
+}
+
+
+
+.node-blog-form .field-name-field-blog-logo input.form-submit{
+    padding:3px 6px;
+    border-radius:5px;
+}
+.node-blog-form  .field-name-body label{
+    font-weight:normal;
+    padding:5px 0;
+}
+.node-blog-form  .field-name-body textarea{
+    border:1px #DDD solid;
+}
+.node-blog-form .field-name-field-blog-photos input{
+    border:1px #DDD solid;
+    cursor:pointer;
+}
+.node-blog-form .field-name-field-blog-photos legend span{
+    color:#990000;
+    
+}
+.node-blog-form .field-name-field-blog-photos .description{
+    margin:5px;
+}
+.node-blog-form .form-submit{
+    border:1px #DDD solid;
+    padding:5px 10px;
+    cursor:pointer;
+    margin-right:10px;
+    border-radius:5px;
+}
+.node-blog-form .field-name-field-activity-term{
+    display:none;
+}
+
+.node-blog-form .vertical-tabs{
+    display:none;
+}
+
+.node-blog-form #edit-body label{
+    /*display:none;*/
+}

@@ -1,0 +1,111 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+return array(
+    'title' => [
+        'field_type' => 'title',
+        'label' => \Yii::t('normal', 'Title'),
+        'group' => 'normal',
+        'value_callback' => '',
+        'render_on' => array(),
+        'update_on' => array(),
+        'editable' => true,
+        'widget' => array(
+            ''
+        )
+    ],
+    'brief' => [
+        'field_type' => 'title',
+        'label' => \Yii::t('normal', 'Brief'),
+        'group' => 'normal',
+        'editable' => true
+    ],
+    //-- Form designer with resource field including --
+    'designer' => [
+        'field_type'=>'username',
+        //-- 自定义字段名称，用于Form表单渲染 --
+        //-- 自定义字段显示Label --
+        'label'=>\Yii::t('normal', 'Designer'),
+        //-- 字段归类设置 --
+        'group' => 'designer',
+        'editable' => true,
+        //-- 字段值设置回调方法，默认可不设置 --
+        'value_callback' => '',
+        //-- 字段应用依赖（字段显示依赖） --
+        'render_on'=>array(),
+        //-- 字段值更新依赖 --
+        'update_on' => array(),
+
+        /*-- 字段Widget参数配置 --
+         * 字段渲染应用插件，通常为默认，对于一些特殊插件，例如时间日期、Gallery，Image等可以
+         * 选择渲染插件实现不同的渲染效果，一套渲染插件是一套Html+CSS+JS的结构组合
+         */
+        'widget' => array()
+    ],
+    'designer_avatar' => [
+        'field_type' => 'image',
+        'label' => \Yii::t('normal', 'Avatar'),
+        'group' => 'designer',
+        'editable' => true
+    ],
+    'design_note' => [
+        'field_type' => 'brief',
+        'label' => \Yii::t('normal', 'Brief'),
+        'group' => 'designer',
+        'editable' => true
+    ],
+    'design_link' => [
+        'field_type' => 'link',
+        'label' => \Yii::t('normal', 'Personal Link'),
+        'group' => 'designer',
+        'editable' => true
+    ],
+    'sku' => [
+        'field_type' => 'sku',
+        'label' => \Yii::t('business', 'SKU'),
+        'value_callback' => ['\Ebouti\Business\Helpers\Feild', 'buildSkuValue'],
+        'group' => 'goods',
+        'editable' => true
+    ],
+    'unit' => [
+        'field_type' => 'checkout',
+        'label' => \Yii::t('business', 'Unit'),
+        'group' => 'goods',
+        'editable' => true
+    ],
+    'quality' => [
+        'field_type' => 'numeric',
+        'label' => \Yii::t('business', 'Quality'),
+        'group' => 'goods',
+        'editable' => true
+    ],
+    'stocks' => [
+        'field_type' => 'numeric',
+        'label' => \Yii::t('business', 'Stocks'),
+        'group' => 'goods',
+        'editable' => true
+    ],
+    'origin' => [
+        'field_type' => 'address',
+        'label' => \Yii::t('business', 'Origin place'),
+        'group' => 'goods',
+        'editable' => true
+    ],
+    'status' => [
+        'field_type' => 'checkbox',
+        'label' => \Yii::t('business', 'Status'),
+        'group' => 'header_buttons',
+        'editable' => true
+    ],
+    'content' => [
+        'field_type' => 'content',
+        'label' => \Yii::t('normal', 'Content'),
+        'group' => 'normal',
+        'editable' => true
+    ],
+);

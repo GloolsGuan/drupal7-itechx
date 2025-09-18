@@ -1,0 +1,9 @@
+文件说明：
+   本文档是乐书网站项目修改drupal7内核记录，在drupal7更新或升级前必须阅读，并做相应恢复处理。
+
+
+# 2013年3月19日
+【node 表单提交后重定向操作】
+修改记录：
+1.  /module/node/node.pages.inc,  修改后文件已备份到 documents/fixed-core目录。
+2.  修改函数“node_form_submit”，具体代码片段见程序内部注释。

@@ -1,0 +1,3 @@
+<?php
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/blocks/system-main_frontpage.block.css');
+?>

@@ -1,0 +1,25 @@
+.block .content,
+.block .block-content{
+    color:#525252;
+    font-size:1em;
+    line-height:30px;
+}
+
+.block h2{
+    font-size:1.2em;
+    line-height:50px;
+}
+.block .links{
+    margin-top:20px;
+}
+.block .links a{
+    color:#096816;
+    font-size:0.9em;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.block .links a:hover{
+    background:#EEE;
+    color:#FF7F00;
+}

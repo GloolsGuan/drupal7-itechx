@@ -1,0 +1,67 @@
+#view_members_avatar{
+    margin-top:20px;
+}
+#view_members_avatar .field{
+    float:left;
+}
+#view_members_avatar .user-pic{
+    float:left;
+    width:120px;
+    height:120px;
+    margin:0 20px 10px 0;
+    overflow:hidden;
+}
+#view_members_avatar .user-pic img{
+    width:120px;
+    /*height:120px;*/
+}
+
+#view_members_avatar .user-name,
+#view_members_avatar .user-created{
+    width:auto;
+}
+#view_members_avatar .user-name{
+    font-size:1.3em;
+    line-height:30px;
+    font-weight:bold;
+}
+
+#view_members_avatar .user-created{
+    font-size:0.8em;
+    color:#999;
+}
+
+#view_members_avatar .user-signature{
+    margin:10px 0;
+    color:#666;/*#3B3B3B*/
+    font-size:0.9em;
+    line-height:22px;
+    width:100%;
+    font-family:"微软雅黑","华文行楷","华文楷体","楷体","宋体";
+}
+
+#view_members_avatar .profile-link{
+    float:left;
+    width:100%;
+    padding:5px 0;
+    border-top:1px #DDDDDD solid;
+    text-align:right;
+}
+
+#view_members_avatar .profile-link .link-item{
+    float:right;
+    width:auto;
+    margin:0 3px;
+}
+
+#view_members_avatar .profile-link .link-item a{
+    font-size:0.78em;
+    color:#666;
+    padding:3px 5px;
+    border:1px #096816 solid;
+    border-radius:5px;
+}
+#view_members_avatar .profile-link .link-item a:hover{
+    background:#096816;
+    color:#eee;
+}

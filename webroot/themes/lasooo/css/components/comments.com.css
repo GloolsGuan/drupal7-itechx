@@ -1,0 +1,187 @@
+/*
+    Style component: comments
+    
+    Comments list and form style define. 
+*/
+.comments{
+    width:100%;
+    float:left;
+}
+.comments .comment{
+    margin-top:20px;
+    border:1px #EEE solid;
+    border-radius:8px;
+    padding:10px;
+    font-size:1.2em;
+}
+
+.comments .comment .attribution{
+    
+}
+.comments .comment .attribution .comment-permalink{
+    display:none;
+}
+.comments .comment .attribution .user-picture{
+    width:60px;
+    padding:1px;
+    float:left;
+    margin-right:30px;
+    border:1px #EEE solid;
+}
+.comments .comment .attribution .user-picture img{
+    width:60px;
+    height:auto;
+    
+}
+.comments .comment .attribution .submitted{
+    width:500px;
+    float:left;
+}
+.comments .comment .attribution .submitted p{
+    float:left;
+    width:auto;
+    /*padding:0 6px;*/
+    padding-right:10px;
+    font-size:0.8em;
+}
+.comments .comment .comment-text{
+    width:560px;
+    float:left;
+    padding:10px 1px;
+    padding-bottom:0px;
+    line-height:26px;
+    font-size:0.8em;
+}
+.comments .comment .comment-text .links{
+    display:none;
+}
+.comments .comment .comment-text h3{
+    display:none;
+}
+.comments .comment .comment-text .links{
+    margin-top:20px;
+    float:right;
+    width:400px;
+}
+.comments .comment .comment-text .links li{
+    float:right;
+}
+.comments .comment .comment-text .links a{
+    color:#096816;
+    width:auto;
+    /*font-size:0.8em;*/
+    padding:3px 6px;
+}
+.comments .comment .comment-text .links a:hover{
+    background:#096816;
+    color:#FFF;
+    border-radius:5px;
+}
+
+.comments .comment .comment-text span.new{
+    color:#FF9900;
+    /*font-size:0.9em;*/
+    width:auto;
+    font-style:ITALE;
+    float:left;
+    margin-right:10px;
+}
+
+/* pager */
+.comments .item-list{
+    width:100%;
+    height:auto;
+    margin-top:20px;
+}
+.comments .pager{
+    font-size:0.8em;
+    color:#096816;
+}
+
+.comments .pager a{
+    color:#096816;
+}
+
+
+.node-postcomment{
+    margin-top:30px;
+    float:left;
+    width:100%;
+}
+
+/* activity comment form */
+.comment-form{
+    font-size:1.1em;
+    color:#666;
+    margin-top:30px;
+}
+.comment-form .form-type-item{
+    width:100px;
+    float:left;
+}
+.comment-form .field-name-comment-body{
+    float:left;
+    /*height:150px;*/
+    /*display:none;*/
+    /*margin-left:20px;*/
+}
+
+
+.comment-form .field-name-comment-body label{
+    display:none;
+}
+.comment-form .field-name-comment-body .filter-wrapper{
+    display:none;
+}
+.comment-form .form-actions{
+    float: right;
+    /*margin-top: 130px;*/
+    text-align: right;
+    width: 76px;
+}
+.comment-form .form-actions.form-wrapper{
+    margin-bottom:0px;
+}
+
+.comment-form .form-type-item label{
+    width:80px;
+    float:left;
+}
+.comment-form .form-type-item a{
+    font-size:1em;
+}
+
+.comment-form div.form-type-textarea{
+	width:480px;
+}
+.comment-form #edit-comment-body{
+	width:auto;
+	float:left;
+}
+.comment-form textarea{
+    border:1px #DDD solid;
+    /*width:480px;*/
+}
+
+.comment-form .form-actions{
+	margin-top:1em;
+}
+
+.node-postcomment{
+	border-top:2px #DDD solid;
+}
+/* -- end -- */
+/*
+.node-postcomment .comment-form .form-type-item{
+    width:100%;
+    float:left;
+}
+.node-postcomment .comment-form .form-type-item label,
+.node-postcomment .comment-form .form-type-item a{
+    width:auto;
+    float:left;
+    padding-right:5px;
+}
+.node-postcomment .comment-form #edit-comment-body,
+
+*/

@@ -1,0 +1,66 @@
+#block-system-main .form-register-description{
+    font-size:0.9em;
+    color:#525252;
+    margin:10px 0;
+    border-bottom:1px #DDD solid;
+}
+
+#block-system-main #user-register-form .title-wrapper .title{
+    display:none;
+}
+
+.form-register-description .header{
+    color:#096816;
+    font-size:1em;
+    margin-top:0px;
+    border:1px #FF9900 solid;
+    padding:10px;
+    background:#FFFCE5;
+}
+
+.form-register-description div{
+    margin-bottom:30px;
+    line-height:26px;
+    display:none;
+}
+.form-register-description center{
+    color:#096816;
+    font-weight:normal;
+    font-size:1.5em;
+    line-height:46px;
+    font-family:"楷体","微软雅黑";
+}
+.form-register-description center .description{
+    font-size:0.8em;
+    padding:0 5px;
+    background:#91c100;
+    border-radius:3px;
+    margin-left:20px;
+    color:#FFF;
+    cursor:pointer;
+}
+.form-register-description center .description:hover{
+    background:#FF9900;
+}
+.form-register-description h2{
+    font-size:1.3em;
+    border-bottom:1px #EEE solid;
+    line-height:30px;
+    /*font-weight:normal;*/ 
+}
+
+form#user-register-form .form-wrapper{
+    width:500px;
+    margin:20px auto;
+}
+form#user-register-form label{
+    width:150px;
+}
+
+form#user-register-form .form-item .description{
+    display:none;
+}
+
+form#user-register-form input.form-text{
+    width:200px;
+}

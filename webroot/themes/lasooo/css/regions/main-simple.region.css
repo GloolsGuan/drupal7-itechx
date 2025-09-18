@@ -1,0 +1,9 @@
+<?php 
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/blocks/system-main.block.css');
+?>
+#region-main,
+#region-sidebar_second{
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:10px 0;
+}

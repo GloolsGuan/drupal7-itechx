@@ -1,0 +1,99 @@
+本文件记录了乐书网开发过程中，历次对数据库修改的全部记录：
+
+# 史前时期
+-------------------------------------------------------------------------------------
+增加数据表： 
+   1. la_users_contact
+      说明： 该表对用户数据进行扩展，添加了乐书网所需要的基本联系信息。
+   2. la_users_points
+      说明：该表记录用户积分信息。
+   以上两张数据表在member模块安装时定义。
+
+
+   
+# 2012年8月23日
+-------------------------------------------------------------------------------------
+增加数据表(手工创建)：
+   1.  la_users_cities
+       说明：用户与城市关系，一个用户可以关联多个城市信息，但是只能有一个type=locolization.
+       结构源码：
+       <<<
+          CREATE TABLE IF NOT EXISTS `la_users_cities` (
+              `uid` int(10) unsigned NOT NULL DEFAULT '0',
+              `city_id` int(10) unsigned NOT NULL DEFAULT '0',
+              `type` enum('located','favorite') DEFAULT NULL,
+              PRIMARY KEY (`uid`),
+              KEY (`city_id`),
+              UNIQUE KEY `uid` (`uid`)
+          ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+       >>>
+   2.  la_users_favoriteactivities
+       说明：用户与所喜欢的活动关系。在该数据表中，说明了用户所喜欢的活动以及关注活动的哪些信息。
+       结构源码：
+       <<<
+           create table la_users_favoriteactivities(
+               `uid` int unsigned not null default 0,
+               `aid` int unsigned not null default 0,
+               `notice_type` enum('all', 'activity update', 'blog', 'comment'),
+               UNIQUE KEY `uid_aid` (`uid`,`aid`),
+               KEY (`uid`),
+               KEY(`aid`)
+               
+           )
+       >>>
+   3.  la_users_participantactivities
+       说明：用户与所参与活动关系。
+       <<<
+           create table la_users_participantactivities(
+               `uid` int unsigned not null default 0,
+               `aid` int unsigned not null default 0,
+               `vid` int unsigned not null default 0,
+               `created` timestamp,
+               `status` enum('applied', 'paied', 'bepresent', 'commented', 'harvested'),
+               UNIQUE KEY `uid_aid_vid` BTREE (`uid`,`aid`,`vid`)
+               KEY (`uid`),
+               KEY (`aid`),
+               KEY (`vid`)
+           )
+       >>>
+   4.  la_users_account
+       说明：用户个人账户信息，这里记录乐书金币状况，乐书金币1金币兑换1人民币，之所以用启用乐书金币，是方便货币兑换，与系统开发。
+       网站开发比较完善后，可能考虑直接是个人现金账户。
+       <<<
+           create table la_users_account(
+               `uid` int unsigned not null default 0,
+               `payer` int unsigned not null default 0 comment '0 means system payed',
+               `income` int unsigned not null default 0,
+               `expend` int unsigned not null default 0,
+               `totalize` int unsigned not null default 0,
+               `created` timestamp default CURRENT_TIMESTAMP,
+               `note` text,
+               UNIQUE KEY `uid` (`uid`),
+               KEY(`payer`),
+               KEY(`created`)
+           )
+       >>>
+   5. SNS站点用户关系表结构设计
+      需求说明：
+        1. 用户之间可以互相关注
+        2. 可以选择关注类型，比如只关注原创、关注原创与转发
+      <<<
+          create table la_users_relation(
+              `uid` int unsigned not null default 0 comment 'who startup this relation.',
+              `tuid` int unsigned not null default 0 comment 'target user id, who you want to build relation to.',
+              `type` enum('follower', 'friend'),
+              `listen_type` enum('all', 'blog', 'forum', 'comment'),
+              `created` timestamp default CURRENT_TIMESTAMP,
+              `status` enum('active', 'blocked')
+              UNIQUE KEY `uid_tuid` (`uid`, `tuid`)
+          )
+          create table la_users_blacklist(
+            `uid` int unsigned not null default 0 comment 'who want to add a piece of information in his blacklist',
+            `tuid` int unsigned not null default 0 comment 'Who need to be blocked by uid.',
+            `created` timestamp default CURRENT_TIMESTAMP,
+            `note` text comment 'Why do you want to block the person?',
+            UNIQUE KEY `uid_tuid` (`uid`, `tuid`),
+            KEY (`uid`),
+            KEY (`tuid`)
+          )
+      >>>

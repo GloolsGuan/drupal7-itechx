@@ -1,0 +1,86 @@
+/*
+    region:region-home-region-1
+*/
+
+
+.region-sidebar_slideshow #view_lasooo_slideshow{
+    width:450px;
+    height:300px;
+    /*border:1px #FF9900 solid;*/
+    float:right;
+    margin-right:20px;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity:0.9;
+    overflow:hidden;
+}
+.region-sidebar_slideshow .block-view_lasooo_slideshow .block-content{
+    margin-top:0px;
+}
+.region-sidebar_slideshow .block-view_lasooo_slideshow .slideContainer{
+    width:450px;
+    height:300px;
+    overflow:hidden;
+}
+.region-sidebar_slideshow .block-view_lasooo_slideshow .slideContent{
+	width:auto;
+	height:300px;
+}
+
+.region-sidebar_slideshow .block-view_lasooo_slideshow ul{
+	margin:0;
+	padding:0;
+}
+.region-sidebar_slideshow .block-view_lasooo_slideshow ul li{
+	list-style:none;
+	width:450px;
+	height:300px;
+	float:left;
+	margin:0;
+	padding:0;
+	/*border:1px #EEEEEE solid;*/
+}
+
+.region-sidebar_slideshow .block-view_lasooo_slideshow ul li img{
+	width:450px;
+	height:300px;
+}
+
+.region-sidebar_slideshow .block-view_lasooo_slideshow .handlers-shade{
+    background: none repeat scroll 0 0 #DDDDDD;
+    height: 26px;
+    position: absolute;
+    margin-top: -26px;
+    width: 450px;
+    filter:alpha(opacity=50);/* IE */ 
+    -moz-opacity:0.5;/* Moz + FF */ 
+    opacity: 0.5;
+}
+
+.region-sidebar_slideshow .block-view_lasooo_slideshow .handlers{
+    height: 26px;
+    position: absolute;
+    margin-top: -26px;
+    width: 450px;
+	font-weight:bold;
+}
+.region-sidebar_slideshow .block-view_lasooo_slideshow .tabsMap_item, 
+.region-sidebar_slideshow .block-view_lasooo_slideshow .bA, 
+.region-sidebar_slideshow .block-view_lasooo_slideshow .bB {
+	float:right;
+	width:30px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	font-size:1em;
+	cursor:pointer;
+    color:#666;
+	/*margin-top:15px;*/
+}
+.region-sidebar_slideshow .block-view_lasooo_slideshow .handlers .tabActive, 
+.region-sidebar_slideshow .block-view_lasooo_slideshow .handlers .handlerActive{
+	color:#FF9900;
+}
+.region-sidebar_slideshow .block-view_lasooo_slideshow .bB{
+	margin-right:10px;
+}

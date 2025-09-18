@@ -1,0 +1,19 @@
+.node.node-activity{
+    height:100px;
+    overflow:hidden;
+}
+
+.node.node-activity .logo{
+    width:120px;
+    height:100px;
+    float:left; 
+}
+.node.node-activity .logo img{
+    width:auto;
+    height:100px;
+}
+
+.node.node-activity .title{
+    width:auto;
+    float:left;
+}

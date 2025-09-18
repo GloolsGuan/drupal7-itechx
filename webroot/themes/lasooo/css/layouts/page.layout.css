@@ -1,0 +1,17 @@
+<?php
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/header.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/main.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/footer.region.css');
+?>
+
+#region-main{
+    width:920px;
+    padding:50px 20px;
+    font-size:1.1em;
+    color:#666;
+}
+.breadcrumb{
+    display:none;
+}
+
+

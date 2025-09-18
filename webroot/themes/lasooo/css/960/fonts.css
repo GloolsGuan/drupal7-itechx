@@ -1,0 +1,92 @@
+.font_title_1,
+.font_title_1 a{
+    font-size:2em;
+}
+.font_title_2,
+.font_title_2 a{
+    font-size:1.8em;
+}
+.font_title_3,
+.font_title_3 a{
+    font-size:1.6em;
+}
+.font_title_4,
+.font_title_4 a{
+    font-size:1.4em;
+}
+
+.font_text_1,
+.font_text_1 a{
+    font-size:1em;
+}
+.font_text_2,
+.font_text_2 a{
+    font-size:0.9em;
+}
+.font_text_3,
+.font_text_3 a{
+    font-size:0.8em;
+}
+
+.font_annotation_1{
+    font-size:1em;
+    color:#666666;
+}
+.font_annotation_2{
+    font-size:0.9em;
+    color:#666666;
+}
+.font_annotation_3{
+    font-size:0.8em;
+    color:#666666;
+}
+.font_link_1{
+
+}
+.font_link_2{
+
+}
+.font_link_3{
+
+}
+
+.fontcolor_0,
+.fontcolor_0 a{
+    color:#096816;
+}
+.fontcolor_0 a:hover{
+    color:#FF9900;
+}
+,
+.fontcolor_0 a:active{
+    color:#096816;
+}
+
+.fontcolor_1,
+.fontcolor_1 a{
+    color:#666666;
+}
+
+.fontcolor_1 a:hover{
+    color:#096816;
+    background:#EEEEEE;
+}
+,
+.fontcolor_1 a:active{
+    color:#666666;
+}
+
+.fontcolor_2,
+.fontcolor_2 a{
+    color:#FFF;
+}
+
+.fontcolor_2 a:hover{
+    color:#096816;
+    background:#EEEEEE;
+}
+,
+.fontcolor_2 a:active{
+    color:#FFF;
+}
+

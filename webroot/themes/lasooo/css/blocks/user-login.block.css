@@ -1,0 +1,25 @@
+form#user-login{
+    width:400px;
+    margin:10px auto;
+}
+
+form#user-login label{
+    width:150px;
+}
+
+form#user-login input.form-text{
+    width:200px;
+}
+
+form#user-login .form-actions a{
+    margin-left:10px;
+    color:#525252;
+    font-size:0.9em;
+    padding:5px 8px;
+    background:#EEE;
+    border-radius:5px;
+}
+
+form#user-login .form-actions a:hover{
+    color:#FF9900;
+}

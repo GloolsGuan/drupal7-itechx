@@ -1,0 +1,16 @@
+
+#block-system-main{
+   /*width: 680px;*/
+    /*float:right;*/
+    padding:10px;
+    /*border-left:5px #91C100 solid;*/
+}
+
+#view_custom_members_avatar,
+#view_custom_members_levelprocess{
+    /*width:280px;*/
+    /*float:left;*/
+    margin-bottom:20px;
+    /*border-bottom: 1px #91C100 solid;*/
+}
+

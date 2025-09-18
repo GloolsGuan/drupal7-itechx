@@ -1,0 +1,84 @@
+/*--- [layout.css] Global Layout Define ---*/
+#region-extension{
+    display:none;
+}
+ul,ul li, li.leaf{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+/* global layout define */
+.box-wrapper{
+    width:1020px;
+    margin:0 auto;
+}
+
+.top-wrapper,
+.footer-wrapper{
+    width:100%;
+    min-width:1020px;
+}
+
+.footer-wrapper{
+    margin-top:30px;
+}
+
+/* regions-wrapper */
+.regions-wrapper{
+    width:1020px;
+    margin:0 auto;
+    height:auto;
+}
+#block-system-main>.content{
+    min-height:500px;
+}
+
+/* region layout structure */
+.rl_1c_main{
+    width:1020px;
+    min-height:500px;
+    height:auto;
+    overflow:hidden;
+}
+
+.rl_2c_main{
+    width:680px;
+    float:left;
+    overflow:hidden;
+}
+.rl_2c_side{
+    width:280px;
+    float:left;
+    overflow:hidden;
+}
+.rl_2c_dl{
+    margin-left:20px;
+}
+.rl_2c_dr{
+    margin-right:20px;
+}
+
+.rl_3c_leftSide{
+    width:200px;
+    float:left;
+    overflow:hidden;
+}
+.rl_3c_main{
+    width:580px;
+    float:left;
+    overflow:hidden;
+}
+.rl_3c_dr{
+    margin-right:20px;
+}
+.rl_3c_rightSide{
+    width:200px;
+    float:right;
+    overflow:hidden;
+}
+.rl_3c_distance{
+    margin-left:20px;
+}
+
+/*--- [layout.css:end] ---*/

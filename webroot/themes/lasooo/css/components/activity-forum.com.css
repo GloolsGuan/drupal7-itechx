@@ -1,0 +1,33 @@
+.node-forum-form .form-item-title input{
+    height:30px;
+    border:1px #ddd SOLID;
+    font-size:1em;
+    color:#666;
+    font-weight:normal;
+}
+.node-forum-form label{
+    font-size:1.1;
+    color:#666;
+    font-weight:normal;
+}
+
+.node-forum-form select{
+    width:160px;
+    height:30px;
+}
+
+.node-forum-form textarea{
+    border:1px #ddd SOLID;
+    color:#666;
+}
+
+.node-forum-form .form-submit{
+    line-height:30px;
+    width:60px;
+    font-size:1.1em;
+    color:#666;
+    background:#EEE;
+    border:1px #ddd solid;
+    cursor:pointer;
+    margin: 0 10px;
+}

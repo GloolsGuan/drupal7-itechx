@@ -1,0 +1,25 @@
+#view_activity_navigation{
+    margin:20px 0;
+    height:100px;
+}
+#view_activity_navigation .block-title{
+    display:none;
+}
+#view_activity_navigation .block-content>div{
+    width:135px;
+    line-height:36px;
+    font-size:1.2em;
+    float:left;
+    border-left:5px #ddd solid;
+    margin:5px;
+    background:#EEE;
+    text-align:center;
+    color:#333;
+}
+
+#view_activity_navigation .block-content>div a{
+    color:#444;
+}
+#view_activity_navigation .block-content>div a:hover{
+    color:#990000;
+}

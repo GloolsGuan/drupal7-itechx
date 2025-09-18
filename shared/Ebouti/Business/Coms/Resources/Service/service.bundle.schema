@@ -1,0 +1,19 @@
+<?php
+
+/* 
+ * 服务项目，一个具体的服务项目，例如服装定制、
+ * 预定服务有自己的独特数据结构不同于一般商品，发布预定服务更多的是说明预期、交互方式等事宜。
+ * 
+ */
+
+return array(
+    'name' => 'service',
+    'title' => 'Booking Service'
+    'depend_on' => 'biz',
+    'fields' => [
+        'biz_type' => '',
+        'booking_time' => '',
+        'booking_fee' => '',
+        ''
+    ]
+);

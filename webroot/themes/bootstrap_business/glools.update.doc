@@ -1,0 +1,6 @@
+Updated by @Glools for discovery project.
+
++ folder | css/layouts
++ folder | css/pages
++ file   | theme-funcs.php
+~ file   | backup original bootstrap_business/template.php to bootstrap_business/template-bb-bak-nochange.php

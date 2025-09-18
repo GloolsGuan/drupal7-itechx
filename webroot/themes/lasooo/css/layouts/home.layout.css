@@ -1,0 +1,28 @@
+<?php
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/header.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/sidebar_first.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/main.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/sidebar_second.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/footer.region.css');
+?>
+
+#region-sidebar_top{
+	border-bottom:2px #91C100 solid;/*#096810*/
+}
+
+#region-main{
+    border-left:5px #EEE solid; /*#91C100 */
+    margin-left:0px;
+    min-height:200px;
+    /*width:600px;*/
+}
+
+#region-main, #region-sidebar_second {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+#region-sidebar_second{
+    margin-right:10px;
+}

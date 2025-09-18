@@ -1,0 +1,20 @@
+<?php
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/header.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/sidebar_slideshow.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/sidebar_top-frontpage.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/main-frontpage.region.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/regions/footer.region.css');
+
+?>
+.topad-wrapper{
+    background:#525252;/*838B8B*/
+    /*margin-top:20px;*/
+}
+.topad-wrapper .regions-wrapper{
+    background:#525252;
+    padding:15px 0 ;
+}
+
+#block-system-main .content{
+    display:none;
+}

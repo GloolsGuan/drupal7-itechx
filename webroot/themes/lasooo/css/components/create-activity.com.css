@@ -1,0 +1,236 @@
+.breadcrumb{
+    display:none;
+}
+#block-system-main{
+    margin:20px 10px;
+    width:620px;
+    height:auto;
+    overflow:hidden;
+}
+
+/* -- block define -- */
+
+#region-sidebar_second .block{
+    
+    margin-bottom:20px;
+    padding:10px;
+    border-radius:5px;
+}
+#region-sidebar_second .block .block-title{
+    border-bottom:1px #999 solid;
+}
+
+#region-sidebar_second #view_custom_members_avatar .profile-link{
+    display:none;
+}
+
+#activity-node-form .form-textarea-wrapper{
+    width:620px;
+}
+
+.form-textarea-wrapper .cke_skin_kama a.cke_toolbox_collapser{
+    display:none;
+}
+
+#activity-node-form span.cke_skin_kama{
+    padding:0px;
+}
+
+#activity-node-form .description,
+#activity-node-form .fieldset-description{
+    color:#999;
+    font-size:0.8em;
+    border:1px #CCC solid;
+    border-radius:5px;
+    padding:8px;
+    margin:8px 0;
+    /*background:#EEE;*/
+}
+#activity-node-form .field-name-field-activity-ext-logos .fieldset-description{
+    font-size:0.8em;
+}
+
+#activity-node-form label,
+#activity-node-form .field-name-field-activity-ext-logos{
+    font-size:1.1em;
+    font-weight:normal;
+}
+
+#activity-node-form label{
+    width:auto;
+}
+#activity-node-form .form-item{
+    margin:0px;
+}
+#activity-node-form div.form-wrapper,
+#activity-node-form .form-item-title{
+    float:left;
+    margin-bottom:30px;
+    
+}
+
+/*------*/
+#activity-node-form .form-item-title{
+    line-height:30px;
+    height:30px;
+    padding-bottom:5px;
+    border-bottom:2px #DDD solid;
+}
+
+#activity-node-form .form-item-title label{
+    width:auto;
+    float:left;
+    padding-right:10px;
+    border-right:1px #DDD dotted;
+}
+#activity-node-form .form-item-title input{
+    width:480px;
+    margin-left:10px;
+    float:left;
+    font-size:1em;
+    line-height:30px;
+    border:none;
+    height:30px;
+    color:#336633;
+    padding:0 6px;
+    background:#EEE;
+}
+
+/*------*/
+#activity-node-form .field-name-field-activity-tags{
+    height:30px;
+    width:280px;
+    /*background:#FF9900;*/
+    overflow:hidden;
+    font-size:0.9em;
+    line-height:30px;
+}
+
+#activity-node-form .field-name-field-activity-tags label{
+    width:auto;
+    float:left;
+    color:#666;
+    padding:0 10px;
+    background:#C8FE2E;
+}
+
+#activity-node-form .field-name-field-activity-tags input{
+    width:180px;
+    background:#EEE;
+    border:none;
+    height:30px;
+    padding:0 5px;
+    color:#336633;
+    
+}
+
+#activity-node-form .field-name-field-activity-duration{
+    height:30px;
+    line-height:30px;
+    width:300px;
+    margin-left:32px;
+    font-size:0.9em;
+    overflow:hidden;
+}
+
+#activity-node-form .field-name-field-activity-duration label{
+    width:auto;
+    float:left;
+    color:#666;
+    padding:0 10px;
+    background:#C8FE2E;
+}
+
+#activity-node-form .field-name-field-activity-duration input{
+    width:180px;
+    background:#EEE;
+    border:none;
+    height:30px;
+    padding:0 5px;
+    color:#336633;
+}
+
+#activity-node-form .field-name-field-activity-time{
+    height:30px;
+    line-height:30px;
+    width:600px;
+    border:1px #FF9900;
+    font-size:0.9em;
+    overflow:hidden;
+}
+#activity-node-form .field-name-field-activity-time label{
+    width:auto;
+    float:left;
+    color:#666;
+    padding:0 10px;
+    background:#C8FE2E;
+}
+#activity-node-form .field-name-field-activity-time input{
+    width:180px;
+    background-color:#EEE;
+    border:none;
+    height:30px;
+    padding:0 5px;
+    color:#336633;
+}
+
+#activity-node-form .field-name-field-logo-thumbnail{
+    width:600px;
+    height:auto;
+    line-height:30px;
+    border:1px #FF9900;
+    font-size:0.9em;
+    overflow:hidden;
+}
+
+#activity-node-form .field-name-field-logo-thumbnail label{
+    width:auto;
+    float:left;
+    color:#666;
+    padding:0 10px;
+    margin-right:10px;
+}
+
+#activity-node-form .field-name-field-logo-thumbnail input.form-file{
+    width:340px;
+    /*
+    
+    background:#EEE;
+    border:none;
+    height:30px;
+    padding:0 5px;
+    color:#336633;*/
+}
+
+
+#activity-node-form .field-name-field-logo-thumbnail input.form-submit{
+    width:80px;
+    background:#EEE;
+    border:none;
+    height:30px;
+    cursor:pointer;
+    border-radius:5px;
+    padding:0 5px;
+    color:#336633;
+}
+
+#activity-node-form .field-name-field-activity-fee,
+#activity-node-form .field-name-field-activity-type,
+#activity-node-form .field-name-field-support-language,
+#activity-node-form .field-name-field-city{
+    margin-right:20px;
+}
+
+/*
+#activity-node-form .form-item-activity-period input,
+#activity-node-form .field-name-field-activity-fee input,
+#activity-node-form .field-name-field-activity-duration input{
+    width:100px;
+}
+#activity-node-form .field-name-field-activity-fee,
+#activity-node-form .field-name-field-activity-type,
+#activity-node-form .field-name-field-support-language,
+#activity-node-form .field-name-field-activity-duration{
+    margin-left:50px;
+}
+*/

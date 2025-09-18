@@ -1,0 +1,705 @@
+
+input {
+  /*font: 1em Verdana, sans-serif;*/
+  color: #494949;
+}
+
+textarea,
+select {
+  font: 1em Verdana, sans-serif;
+  color: #494949;
+}
+
+quote,
+code,
+fieldset {
+  margin: .5em 0;
+}
+
+code,
+pre,
+kbd {
+  font-size: 115%;
+}
+
+
+ul li.expanded {
+  list-style-image: url(images/menu-expanded.gif);
+}
+
+ul li.collapsed {
+  list-style-image: url(images/menu-collapsed.gif); /* LTR */
+}
+
+ul li.leaf a,
+ul li.expanded a,
+ul li.collapsed a {
+  display: block;
+}
+
+ul.inline li {
+  background: none;
+  margin: 0;
+  padding: 0 1em 0 0; /* LTR */
+}
+
+
+fieldset ul.clearfix li {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+}
+
+
+img,
+a img {
+  border: none;
+}
+
+.submitted, .description,
+.vertical-tab-button .summary {
+  font-size: 0.92em;
+  color: #898989;
+}
+
+.description .more-help-link {
+  font-size: 0.92em;
+}
+
+.description {
+  line-height: 150%;
+  margin-bottom: 0.75em;
+  color: #898989;
+}
+
+.preview {
+  margin: .75em 0 .75em;
+  padding: .5em 1em;
+}
+
+.form-checkboxes,
+.form-radios,
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  margin: 0.25em 0;
+}
+
+#center form {
+  margin-bottom: 2em;
+}
+
+.form-actions {
+  margin: 2em 0 1em;
+}
+
+
+/*
+    Comments styles
+*/
+#comments {
+  position: relative;
+  top: -1px;
+  border-bottom: 1px solid #e9eff3;
+  margin: 1.5em -25px 0;
+  padding: 0 25px;
+}
+
+#comments h2.comments {
+  margin: 0 -25px;
+  padding: .5em 25px;
+  background: #fff url(images/gradient-inner.png) repeat-x 0 0;
+}
+
+
+
+.indented {
+  margin-left: 25px; /* LTR */
+}
+
+.comment h3 a.active {
+  color: #494949;
+}
+
+.node .content,
+.comment .content {
+  /*margin: 0.6em 0;*/
+}
+
+
+/**
+ * Color.module
+ */
+#palette .form-item {
+  border: 1px solid #fff;
+}
+#palette .item-selected {
+  background: #fff url(images/gradient-inner.png) repeat-x 0 0;
+  border: 1px solid #d9eaf5;
+}
+
+
+
+
+
+/**
+ * Autocomplete.
+ */
+#autocomplete li {
+  cursor: default;
+  padding: 2px;
+  margin: 0;
+}
+
+/**
+ * Collapsible fieldsets
+ */
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #d9eaf5;
+  background: #fff url(images/gradient-inner.png) repeat-x 0 0;
+}
+
+/* Targets IE 7. Fixes background image in field sets. */
+*:first-child+html fieldset {
+  padding: 0 1em 1em;
+  background-position: 0 .75em;
+  background-color: transparent;
+}
+*:first-child+html .text-format-wrapper .filter-wrapper {
+  padding: 1.5em 0 1.5em;
+  background-position: 0 0;
+}
+
+/* Keep the background position at 0 for filters and vertical tabs. */
+*:first-child+html fieldset.filter-wrapper,
+*:first-child+html fieldset.vertical-tabs-pane {
+  background-position: 0 0;
+}
+
+*:first-child+html fieldset .fieldset-wrapper .fieldset-description {
+  padding-top: 1em;
+}
+
+html.js fieldset.collapsed {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: .6em;
+}
+
+html.js fieldset.collapsible .fieldset-legend {
+  padding-left: 2em; /* LTR */
+  background: url(images/menu-expanded.gif) no-repeat 0% 50%; /* LTR */
+}
+html.js fieldset.collapsed .fieldset-legend {
+  background: url(images/menu-collapsed.gif) no-repeat 0% 50%; /* LTR */
+}
+
+.fieldset-legend span.summary {
+  color: #898989;
+}
+
+/**
+ * Vertical tabs.
+ */
+div.vertical-tabs {
+  border-color: #d9eaf5;
+}
+
+div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
+  padding: 0.5em 1em;
+}
+
+div.vertical-tabs ul.vertical-tabs-list {
+  border-color: #d9eaf5;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li {
+  background-color: #edf5fa;
+  border-color: #d9eaf5;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li strong {
+  font-weight: normal;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li.selected strong {
+  font-weight: bold;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li.selected small {
+  color: #898989;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li.selected {
+  background: #fff repeat-x 0 0;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li.selected.first {
+  background-image: url(images/gradient-inner.png);
+}
+
+div.vertical-tabs ul.vertical-tabs-list li.selected a strong {
+  color: #494949;
+}
+
+/**
+ * Syndication icons and block
+ */
+#block-node-syndicate h2 {
+  float: left; /* LTR */
+  padding-right: 20px; /* LTR */
+}
+
+#block-node-syndicate img,
+.feed-icon {
+  float: right; /* LTR */
+  padding-top: 4px;
+}
+
+#block-node-syndicate .content {
+  clear: right; /* LTR */
+}
+
+/**
+ * Login Block
+ */
+#user-login-form {
+  text-align: center;
+}
+#user-login-form ul {
+  text-align: left; /* LTR */
+}
+#user-login .openid-links {
+  padding: 0;
+}
+#user-login-form .openid-links {
+  padding-left: 0.5em; /* LTR */
+}
+#user-login-form .openid-links li.user-link {
+  padding-left: 1em; /* LTR */
+}
+
+
+
+#autocomplete li.selected,
+tr.selected td,
+tr.selected td.active {
+  background: #027ac6;
+  color: #fff;
+}
+
+tr.selected td a:link,
+tr.selected td a:visited,
+tr.selected td a:active {
+  color: #d3e7f4;
+}
+
+tr.taxonomy-term-preview {
+  opacity: 0.5;
+}
+
+tr.taxonomy-term-divider-top {
+  border-bottom: none;
+}
+
+tr.taxonomy-term-divider-bottom {
+  border-top: 1px dotted #CCC;
+}
+
+.theme-selector h3 {
+  margin: 10px 0;
+}
+.theme-selector .operations li {
+  list-style-image: none;
+}
+
+/*******************************************************************
+ * Color Module: Don't touch                                       *
+ *******************************************************************/
+
+/**
+ * Generic elements.
+ */
+.preview {
+  background-color: #fcfce8;
+  border: 1px solid #e5e58f;
+}
+
+.form-item input.error,
+.form-item textarea.error {
+  border: 1px solid #c52020;
+  color: #363636;
+}
+
+/**
+ * dblog.module
+ */
+tr.dblog-user {
+  background-color: #fcf9e5;
+}
+
+tr.dblog-user td.active {
+  background-color: #fbf5cf;
+}
+
+tr.dblog-content {
+  background-color: #fefefe;
+}
+
+tr.dblog-content td.active {
+  background-color: #f5f5f5;
+}
+
+tr.dblog-warning {
+  background-color: #fdf5e6;
+}
+
+tr.dblog-warning td.active {
+  background-color: #fdf2de;
+}
+
+tr.dblog-error {
+  background-color: #fbe4e4;
+}
+
+tr.dblog-error td.active {
+  background-color: #fbdbdb;
+}
+tr.dblog-page-not-found,
+tr.dblog-access-denied {
+  background: #d7ffd7;
+}
+tr.dblog-page-not-found td.active,
+tr.dblog-access-denied td.active {
+  background: #c7eec7;
+}
+
+/**
+ * Status report colors.
+ */
+table.system-status-report tr.error,
+table.system-status-report tr.error th {
+  background-color: #fcc;
+  border-color: #ebb;
+  color: #200;
+}
+table.system-status-report tr.warning,
+table.system-status-report tr.warning th {
+  background-color: #ffd;
+  border-color: #eeb;
+}
+table.system-status-report tr.ok,
+table.system-status-report tr.ok th {
+  background-color: #dfd;
+  border-color: #beb;
+}
+
+/*
+    General form style settings
+*/
+form label,
+form fieldset legend{
+    display:inline-block;
+    color:#525252;
+    font-weight:normal;
+    color:#096816;
+    /*width:150px;*/
+    text-align:left;
+}
+
+form .form-item{
+    margin-bottom:30px;
+}
+
+form .form-text{
+    width:60%;
+    line-height:30px;
+    height:30px;
+    font-size:0.9em;
+    padding:0 5px;
+    border:1px #DDD solid;
+    background:#FFFCE5;
+}
+
+form textarea.form-textarea{
+    border:1px #DDD solid;
+    font-size:1.1em;
+    font-family:"宋体";
+    color:#525252;
+    line-height:26px;
+}
+
+form fieldset .form-item{
+    /*margin-left:20px;*/
+}
+
+form fieldset legend{
+    width:100%;
+    /*border-bottom:1px #DDD dotted;*/
+}
+
+form fieldset .fieldset-wrapper{
+    border:1px #DDD solid;
+    padding:10px 15px;
+}
+
+form fieldset .fieldset-wrapper table{
+    width:auto;
+}
+
+form .form-managed-file.clearfix{
+    width:580px;
+}
+
+form .textSpace4 label{
+    width:130px;
+    margin-right:10px;
+}
+
+form .textSpace4 .form-text{
+    width:60px;
+    border:none;
+    border-bottom:1px #DDD solid;
+}
+
+form .textSpace4 .form-item{
+    margin-bottom:0px;
+    
+}
+
+form .form-item .description,
+form .fieldset-description{
+    font-size:0.8em;
+    color:#888;
+}
+
+form .fieldset-description{
+    margin-bottom:10px;
+}
+
+form .form-type-textarea label{
+    width:auto;
+}
+form .form-wrapper{
+    margin-bottom:30px;
+}
+
+form .form-item span.field-prefix,
+form .form-item span.field-suffix{
+    font-size:1.1em;
+    color:#888;
+}
+
+form .tabledrag-toggle-weight-wrapper{
+    display:none;
+}
+
+form tr.even, tr.odd{
+    background:none;
+    border-bottom:1px #BBEE77 solid;
+}
+
+form tr.even{
+    /*background:#EEE;*/
+}
+form .form-submit{
+    padding:5px 12px;
+    font-size:0.9em;
+    font-family:"微软雅黑";
+    font-weight:normal;
+    color:#096816;
+    border-radius:5px;
+    line-height:20px;
+    cursor:pointer;
+    border:none;
+    /*box-shadow:2px 2px 3px #999;*/
+    margin-left:10px;
+}
+form .form-submit:hover{
+    color:#FFF;
+    background:#096816;
+    box-shadow:none;
+}
+
+/* activity form */
+form.node-activity-form label,
+form.node-activity-form fieldset legend span{
+    font-size:0.9em;
+}
+form.node-activity-form .description {
+margin-top: 0.5em;
+font-size: 0.70em;
+}
+form.node-activity-form .fieldset-wrapper{
+    border:none;
+}
+
+form.node-activity-form fieldset.form-wrapper{
+    background: #FCFCFC;
+    border-radius:10px;
+    border:1px #EEE solid;
+}
+
+form.node-activity-form input.form-autocomplete{
+    background-position: 100% 10px;
+}
+
+form.node-activity-form #edit-field-source .link-field-subrow{
+    padding:0 20px;
+}
+
+form.node-activity-form #body-add-more-wrapper fieldset{
+    color:#888;
+}
+form.node-activity-form #body-add-more-wrapper fieldset .filter-guidelines{
+    padding:0;
+}
+form.node-activity-form #body-add-more-wrapper fieldset .form-type-select{
+    /*display:none;*/
+}
+
+form.node-activity-form #edit-field-activity-ext-logos-und-table thead{
+    display:none;
+}
+
+/* -- .activity-pics -- */
+form.node-activity-form .activity-pics{
+    min-height:160px;
+    background: #FCFCFC;
+    border-radius:10px;
+    border:1px #EEE solid;
+    height:auto;
+    padding:10px;
+    padding-bottom:0px;
+    margin-bottom:20px;
+}
+form.node-activity-form .activity-pics>div{
+    width:310px;
+    float:left;
+    overflow:hidden;
+    margin-bottom:0px;
+}
+
+form.node-activity-form .activity-pics .field-name-field-activity-logo{
+    margin-left:18px;
+}
+form.node-activity-form .activity-pics input.form-file{
+    /*width:240px;.*/
+}
+
+form.node-activity-form .activity-pics .image-widget{
+    width:310px;
+}
+form.node-activity-form .activity-pics .image-widget .image-preview{
+    width:100%;
+}
+form.node-activity-form .activity-pics .image-widget img{
+    max-width:310px;
+    height:auto;
+}
+
+/* -- .activity-time -- */
+form.node-activity-form .activity-time{
+    height:100px;
+    clear:both;
+}
+form.node-activity-form .activity-time .fieldset-wrapper{
+    padding:1px;
+    border:none;
+}
+
+form.node-activity-form .activity-time fieldset.form-wrapper{
+    border:none;
+    margin-bottom:0px;
+}
+form.node-activity-form .activity-time .container-inline-date .form-item{
+    margin:0px;
+}
+form.node-activity-form .activity-time .container-inline-date .date-padding{
+    padding:0px;
+}
+
+form.node-activity-form .activity-time .field-type-datestamp{
+    width:200px;
+    height:100px;
+    overflow:hidden;
+    float:left;
+    margin:10px;
+    /*border:1px #DDD dotted;*/
+}
+form.node-activity-form .activity-time .field-type-datestamp input{
+    width:175px;
+}
+
+form.node-activity-form .normal-info{
+    margin-top:20px;
+}
+form.node-activity-form .normal-info .fieldset-wrapper>div{
+    width:160px;
+    height:80px;
+    float:left;
+}
+
+form.node-activity-form .normal-info .fieldset-wrapper .form-wrapper{
+    margin-bottom:10px;
+}
+
+form.node-activity-form .normal-info .fieldset-wrapper .field-name-field-assembling-place,
+form.node-activity-form .normal-info .fieldset-wrapper .field-name-field-activity-tags{
+    width:310px;
+    height:150px;
+}
+form.node-activity-form .normal-info .fieldset-wrapper .field-name-field-activity-tags{
+    margin-left:20px;
+}
+
+form.node-activity-form .normal-info .fieldset-wrapper .field-name-field-assembling-place input,
+form.node-activity-form .normal-info .fieldset-wrapper .field-name-field-activity-tags input{
+    width:290px;
+    border: 1px #DDD solid;
+}
+
+form.node-activity-form fieldset.filter-wrapper{
+    display:none;
+}
+
+form.node-activity-form .field-name-field-activity-ext-logos fieldset.form-wrapper{
+    
+    border:1px #DDD solid;
+    border-radius:10px;
+    background:#FCFCFC;
+}
+/* form.node-activity-form  legend */
+form.node-activity-form .field-name-field-activity-ext-logos legend{
+    border:1px #FFCC00 solid;
+    border-radius:5px;
+    padding: 0 10px;
+    background:#EEE;
+    height: 30px;
+    margin-left:10px;
+    color:#096816;
+    width:auto;
+    line-height: 30px;
+}
+form.node-activity-form .field-name-field-activity-ext-logos .image-widget{
+    margin:10px 0;
+}
+form.node-activity-form .field-name-field-activity-ext-logos .image-widget .image-preview{
+    width:240px;
+}
+form.node-activity-form .field-name-field-activity-ext-logos .image-widget .image-widget-data input.form-file{
+    /*width:240px;*/
+}
+form.node-activity-form .field-name-field-activity-ext-logos .image-widget .image-widget-data{
+    width:300px;
+}
+form.node-activity-form .field-name-field-activity-ext-logos .image-widget .image-widget-data span.file{
+    font-size:0.8em;
+}
+form.node-activity-form .field-name-field-activity-ext-logos .image-widget .image-widget-data .form-item{
+    margin-top:10px;
+}
+form.node-activity-form .field-name-field-activity-ext-logos .image-widget .image-widget-data .form-item .form-text{
+    width:80%;
+}

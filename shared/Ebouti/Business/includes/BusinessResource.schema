@@ -1,0 +1,66 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+return array(
+    //-- The real table or resource name will be "resource_biz"
+    'name' => 'biz',
+    'brief' => 'Business bundle',
+    'schema_type' => 'resource',
+    //-- Field settings for extending resource structure --
+    'fields' => [
+        'customer_id' => [
+            'field_type' => 'numeric',
+            'label' => \Yii::t('normal', 'Customer ID'),
+            'group' => 'base',
+            'editable' => true
+            
+        ],
+        'store_id'=> [
+            'field_type' => 'numeric',
+            'label' => \Yii::t('normal', 'Store ID'),
+            'group' => 'base',
+            'editable' => true
+        ],
+        'creator_id' => [
+            'field_type' => 'numeric',
+            'label' => \Yii::t('normal', 'Resource creator ID'),
+            'group' => 'base',
+            'editable' => true
+        ],
+        //-- Goods service status: activity,locked,adjustment,stockout,soldout --
+        'service_status'=>[
+            'field_type' => 'buttons',
+            'label' => \Yii::t('normal', 'Service Status'),
+            'group' => 'base',
+            'editable' => true
+        ],
+        'base_price' => [
+            'field_type' => 'numeric',
+            'label' => \Yii::t('normal', 'Base price'),
+            'group' => 'base',
+            'editable' => true
+        ],
+        'released_at'=>[
+            'field_type' => 'datetime',
+            'label' => \Yii::t('normal', 'Released at'),
+            'group' => 'base',
+            'editable' => true
+        ],
+        'expired_at' => [
+            'field_type' => 'datetime',
+            'label' => \Yii::t('normal', 'Expired at'),
+            'group' => 'base',
+            'editable' => true
+        ],
+        'stocks' => [
+            'field_type' => 'numeric',
+            'label' => \Yii::t('normal', 'Stocks'),
+            'editable' => true
+        ]
+    ]
+);

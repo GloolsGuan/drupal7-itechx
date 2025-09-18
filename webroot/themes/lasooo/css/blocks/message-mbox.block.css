@@ -1,0 +1,79 @@
+.block.message-mbox{
+    
+}
+
+.block.message-mbox .mtabs{
+    float:left;
+    width:150px;
+    min-height:300px;
+}
+
+.block.message-mbox .mtabs li.mtabs-new{
+    text-align:center;
+    border-bottom:1px #DDD solid;
+    line-height:46px;
+    color:#91c100;
+}
+.block.message-mbox .mtabs ul li{
+    padding:0px;
+    margin:0px;
+    text-align:right;
+    padding:0 10px;
+    line-height:30px;
+    cursor:pointer;
+    border-bottom:1px #DDD solid;
+}
+
+.block.message-mbox .mtabs ul li:hover{
+    color:#096816;/*#91c100;*/
+    background:#F9F9F9;
+    border-bottom:1px #91c100 solid;
+}
+.block.message-mbox .mtabs ul li.active{
+    color:#FFF;/*#91c100;*/
+    background:#91c100;
+    border-bottom:1px #91c100 solid;
+}
+
+.block.message-mbox .mbox{
+    float:left;
+    width:670px;
+    border-left:5px #91c100 solid;
+    min-height:300px;
+    /*background:#F6F6F6;*/
+}
+
+.block.message-mbox .friends{
+    float:right;
+    width:160px;
+    min-height:300px;
+    
+    /*background:#FF9900;*/
+}
+
+.block.message-mbox .friends h2{
+    line-height:28px;
+    color:#FF9900;
+    font-weight:normal;
+    font-size:1.2em;
+    border-bottom:2px #FF9900 solid;
+}
+
+.block.message-mbox .friends .friend-items{
+    margin:10px 0;
+    font-size:0.8em;
+    color:#525252;
+}
+
+.block.message-mbox .mbox .tabs{
+    height:28px;
+    border-bottom:1px #DDD solid;
+    line-height:28px;
+    color:#525252;
+    font-size:0.8em;
+    padding:0 10px;
+}
+
+.block.message-mbox .mbox .mcontent{
+    padding:10px;
+}

@@ -1,0 +1,7 @@
+ # 2012年9月10日  晴 南京
+--------------------------------------------------------------------------------
+[core module] node
+file: node/node.page.inc
+function:node_form_submit
+tag:[glools]
+description: Checking whether $form_state['redirect'] was setted, If yes, Do not set it again.

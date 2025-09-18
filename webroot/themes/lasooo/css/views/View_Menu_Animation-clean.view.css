@@ -1,0 +1,36 @@
+.block-view_menu_animation{
+    margin-top:20px;
+}
+.block-view_menu_animation .group{
+    margin-top:15px;
+}
+.block-view_menu_animation .group-title{
+    font-size:1.2em;
+    color:#666;
+    font-weight:bold;
+    line-height:30px;
+    border-bottom:1px #EEE solid;
+    /*margin-bottom:10px;*/
+}
+.block-view_menu_animation .group-items .item{
+    padding:5px 0;
+}
+
+.block-view_menu_animation .group-items .item a{
+    color:#096816;
+        
+}
+.block-view_menu_animation .group-items .item a:hover{
+    color:#FF9900;
+}
+.block-view_menu_animation .group-items .item .group-item-link{
+    padding-right: 5px;
+}
+.block-view_menu_animation .group-items .item .group-item-mes{
+    color:#999;
+    font-size:0.8em;
+}
+.block-view_menu_animation .group-items .item .group-item-note{
+    font-size:0.8em;
+    color:#999;
+}

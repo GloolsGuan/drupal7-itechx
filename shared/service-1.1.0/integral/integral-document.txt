@@ -1,0 +1,40 @@
+## 积分组件
+
+### 积分项目管理规则
+积分项目是为某一类积分独立创建的项目，一个项目通常依赖一套积分规则。
+项目标明该积分体系应用或所属领域，策略说明该积分体系应用方法。
+integral_log.integral_type(积分类型),也可以认为是策略类型，暂时是简单应用，用来区分积分
+的不同种类，在后期的开发中，该类型将实际应用标明该积分LOG记录所应用的策略。
+
+## 数据表设计
+DROP TABLE IF EXISTS `integral`;
+CREATE TABLE `integral`(
+    `id` int unsigned not null auto_increment primary key,
+    `title` varchar(255) not null default '',
+    `master_title` varchar(255) not null comment 'Master module class namespace.',
+    `master_code` char(64) not null default '',
+    `strategy_id` int not null default 0,
+    `created_at` int not null default 0,
+    `updated_at` int not null default 0,
+    `brief` text,
+    INDEX (`id`),
+    INDEX (`master_code`),
+    UNIQUE INDEX (`master_code`)
+);
+
+DROP TABLE IF EXISTS `integral_log`;
+CREATE TABLE `integral_log`(
+    `id` int unsigned not null auto_increment primary key,
+    `integral_id` int not null default 0,
+    `master_ext_id` int not null default 0,
+    `uc_user_code` char(64) not null default 0,
+    `integral_type_title` varchar(255) not null default '',
+    `integral_type` varchar(100) not null default '',
+    `value` int not null default 0,
+    `created_at` int not null default 0,
+    `updated_at` int not null default 0,
+    `note` text,
+    INDEX  ext_id_type(`master_ext_id`,`integral_type`),
+    INDEX user_id_type(`uc_user_code`, `master_ext_id`, `integral_type`),
+    INDEX (`integral_id`)
+);

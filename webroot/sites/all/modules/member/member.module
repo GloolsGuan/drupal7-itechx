@@ -1,0 +1,153 @@
+<?php
+/*
+ * Created on 28 Oct, 2011
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - PHPeclipse - PHP - Code Templates
+ */
+Glools_Inc_Tools::loadInc('funcs', 'lib', 'member');
+
+function member_init(){
+	//debug_record_data(__FUNCTION__, array(request_path(), $_POST));
+    Glools_Inc_Tools::loadInc('form-element-validate', 'lib', 'glools');
+}
+
+function member_menu() {
+	return array(
+        'member' => array(
+            'title' => 'Member Center',
+            'page callback' => 'member_center',
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'member.page.inc'
+        ),
+        'member/info' => array(
+            'title' => 'Member general information',
+            'page callback' => 'member_center_info',
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'member.page.inc'
+        ),
+        'member/contact' => array(
+            'title' => 'Member contact information',
+            'page callback' => 'member_center_contact',
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'member.page.inc'
+        ),
+        'member/contact/edit' => array(
+            'title' => 'Member contact information',
+            'page callback' => 'member_contact_edit',
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'member-contact.page.inc'
+        ),
+        'member/account' => array(
+            'title' => 'Member account information',
+            'page callback' => 'member_center_account',
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'member.page.inc'
+        ),
+        'member/profile' => array(
+            'title' => 'Member profile',
+            'page callback' => 'member_profile',
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'member-profile.page.inc'
+        ),
+        'member/profile/%' => array(
+            'title' => 'Member profile',
+            'page callback' => 'member_profile',
+            'page arguments' => array(2),
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'member-profile.page.inc'
+        ),
+        'member/edit/%' => array(
+            'title' => 'Edit member information',
+            'page callback' => 'member_edit',
+            'page arguments' => array(2),
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'member-edit.page.inc'
+        ),
+        'member/register' => array(
+            'title' => t('Register Leader'),
+            'page callback' => 'member_register',
+            'page arguments' => array(2),
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'register.page.inc'
+        ),
+        'member/apply/%' => array(
+            'title' => t('Apply'),
+            'page callback' => 'member_apply',
+            'page arguments' => array(2),
+            'access arguments' => array('access content'),
+            'type' => MENU_CALLBACK,
+            'file' => 'apply.page.inc'
+         ),
+         'admin/people/organizer' => array(
+            'title' => t('Organizer'),
+            'page callback' => 'member_organizer_flist',
+            'access arguments' => array('administer users'),
+            'type' => MENU_LOCAL_TASK,
+            'file' => 'admin.page.inc'
+         )
+    );
+}
+
+function member_theme($existing, $type, $theme, $path){
+	return array(
+        'member-info' => array(
+            'variables'=> array('user' => NULL, 'contact'=>NULL, 'points'=>NULL, 'level'=>NULL, 'account'=>NULL),
+            'template' => 'member-info'
+        )
+    );
+}
+
+
+function member_form_alter(&$form, &$form_state, &$formId){
+	
+    $hook = 'member_' . $formId.'_alter';
+    Glools_Inc_Tools::loadInc($formId, 'form', 'member');
+    
+    if (function_exists($hook)) {
+    	$hook($form, $form_state, $formId);
+    }
+}
+
+
+function member_layout_alter(&$layout){
+    if (preg_match('/^(member\/register)|(user\/.*)/', request_path())) {
+        //$layout = 'simple';
+    }
+    
+}
+
+function member_form_afterBuild(&$form, &$form_state){
+    
+	$hook = 'member_' . $form['#form_id'].'_afterBuild';
+    Glools_Inc_Tools::loadInc($form['#form_id'], 'form', 'member');
+    
+    if (function_exists($hook)) {
+        return $hook($form, $form_state, $form['#form_id']);
+    }
+    
+    return $form;
+}
+
+function member_menu_items($section){
+	Glools_Inc_Tools::loadInc('menuitems', 'lib', 'member');
+    return _member_load_menu_items($section);
+}
+
+function member_page_build(&$vars){
+    
+    Glools_Inc_Tools::loadInc('view', 'lib', 'member');
+    
+    if (preg_match('/^member/', request_path())) {
+       glools_load_views('member', $vars, array(), 'member');
+    }
+}

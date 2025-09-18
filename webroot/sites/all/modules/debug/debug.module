@@ -1,0 +1,34 @@
+<?php
+/*
+ * Created on 2011-9-22
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - PHPeclipse - PHP - Code Templates
+ */
+
+function debug_record_data($title, $data){
+ 	
+    $debugPath = DRUPAL_ROOT.'/../debug';
+    $time = date("Y-m-d H:i:s");
+    $file = $debugPath.'/'.date('Y-m-d').'.txt';
+    $prefix = "\n = = = = = = = = = = * * * * * * * * * * = = = = = = = = = =";
+    $header = "\n [$time] $title \n";
+    $sufix = "\n\n";
+    ob_start();
+    var_dump($data);
+    $s = ob_get_contents();
+    ob_end_clean();
+    
+    $fp = fopen($file, 'ab');
+    if(false == $fp){
+    	throw new Exception('Debug Error: Can not open '.$file.'.');
+    }
+    
+    fwrite($fp, $prefix.$header.$s.$sufix);
+    fclose($fp);
+}
+
+function debug_rdata($title, $data){
+	
+	debug_record_data($title, $data);
+}

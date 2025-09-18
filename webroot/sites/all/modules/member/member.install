@@ -1,0 +1,154 @@
+<?php
+
+function member_install() {
+	# TODO
+}
+
+function member_schema() {
+    $tables = array('users_contact', 'users_points');
+    $prefix = '_member_schema_';
+    
+    foreach ($tables as $table) {
+        $hook = $prefix.$table;
+        $schema[$table] = $hook();
+    }
+    
+    return $schema;
+}
+
+function _member_schema_users_contact() {
+    return array(
+        'description' => '',
+        'fields' => array(
+            'uid' => array(
+                'description' => '',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ),
+            'real_name' => array(
+                'description' => '',
+                'type' => 'varchar',
+                'length' => 20,
+                'not null' => true,
+                'default' => ''
+            ),
+            'idcard' => array(
+                'description' => '',
+                'type' => 'varchar',
+                'length' => 50,
+                'not null' => true,
+                'default' => ''
+            ),
+            'lasooo_card' => array(
+                'description' => '',
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => true,
+                'default' => ''
+            ),
+            'mobile' => array(
+                'description' => '',
+                'type' => 'varchar',
+                'length' => 20,
+                'not null' => true,
+                'default' => ''
+            ),
+            'spare_mobile' => array(
+                'description' => '',
+                'type' => 'varchar',
+                'length' => '20',
+                'not null' => true,
+                'default' => ''
+            ),
+            'safe_email' => array(
+                'description' => '',
+                'type' => 'varchar',
+                'length' => 30,
+                'not null' => true,
+                'default' => ''
+            ),
+            'varified_item' => array(
+                'description' => 'This is a serialize field,varified item should be list as the following format {[fieldName]:[dueDate],[verifiedDate]}',
+                'type' => 'text'
+            )
+        ),
+        'unique keys' => array(
+              'uid' => array('uid'),
+              'idcard' => array('idcard'),
+              'lasooo_card'=>array('lasooo_card'),
+              'mobile'=>array('mobile'),
+              'safe_email' => array('safe_email')
+           ),
+        'primary key' => array('uid')
+    );
+}
+
+function _member_schema_users_points() {
+	return array(
+        'description' => '',
+        'fields' => array(
+            'uid' => array(
+                'description' => '',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ),
+            'aid' => array(
+                'description' => 'activity id',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ),
+            'participation' => array(
+                'description' => 'total points',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ),
+            'organization' => array(
+                'description' => 'total points',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ),
+            'contribution' => array(
+                'description' => 'total points',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ),
+            'honesty' => array(
+                'description' => 'total points',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ),
+            'participation_evaluation' => array(
+                'description' => 'total points',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ),
+            'organization_evaluation' => array(
+                'description' => 'total points',
+                'type' => 'int',
+                'unsigned' => true,
+                'not null' => true,
+                'default' => 0
+            ) 
+        ),
+        'unique keys' => array(
+            'uid' => array('uid')
+        ),
+        'primary key' => array('uid')
+    );
+}

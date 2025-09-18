@@ -1,0 +1,84 @@
+#block-system-main .block{
+    float:left;
+    width:300px;
+}
+
+#block-system-main #block-homepage-info{
+    width:600px;
+}
+
+#block-homepage-participantActivity{
+    width:300px;
+}
+
+#block-homepage-participantActivity .block-title{
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size:1.2em;
+    color:#096816;
+}
+
+#block-homepage-participantActivity .block-content .node{
+    height:auto;
+    margin-bottom:20px;
+}
+#block-homepage-participantActivity .block-content .node .node-logo{
+    width:50px;
+    height:50px;
+    float:left;
+    overflow:hidden;
+}
+
+#block-homepage-participantActivity .block-content .node .node-logo img{
+    width:50px;
+    height:50px;
+}
+
+#block-homepage-participantActivity .block-content .node .field-label{
+    display:none;
+}
+
+#block-homepage-participantActivity .block-content .node .node-title{
+    width:240px;
+    height:auto;
+    margin-left:10px;
+    color:#999;
+    float:left;
+}
+
+#block-homepage-participantActivity .block-content .node .node-title a{
+    color:#666;
+    font-size:0.9em;
+}
+
+#block-homepage-participantActivity .block-content .node .node-meta{
+    height:20px;
+    line-height:20px;
+    font-size:0.8em;
+    color:#999;
+    width:240px;
+    margin-left:10px;
+    float:right;
+}
+
+#block-homepage-participantActivity .block-content .node .node-meta .field-name-field-city,
+#block-homepage-participantActivity .block-content .node .node-meta .field-name-field-activity-time{
+    float:left;
+    width:auto;
+}
+
+#block-homepage-participantActivity .block-content .node .node-meta .field-name-field-activity-time{
+    padding:0 8px;
+}
+
+#block-homepage-participantActivity .block-content .node .node-links{
+    width:300px;
+    height:26px;
+    border-bottom:1px #ff0000 solid;
+    float:left;
+}
+
+#block-system-main #block-homepage-myBlogs{
+    width:280px;
+    float:right;
+}

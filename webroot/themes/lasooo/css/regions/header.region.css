@@ -1,0 +1,11 @@
+<?php
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/blocks/logo.block.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/blocks/nav.block.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/blocks/main_menu.block.css');
+print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/blocks/secondary_menu.block.css');
+?>
+.region-header{
+    height:100px;
+    overflow:hidden;
+    /*border-bottom:2px #838B8B solid;*/
+}

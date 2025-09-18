@@ -1,0 +1,9 @@
+<?php print _theme_lasooo_importCSS(THEME_LASOOO_PATH_CSS . '/blocks/system-main.block.css');?>
+
+#region-main{
+    margin:10px 0 0 0;
+    width:620px;
+    float:left;
+    overflow:hidden;
+}
+

@@ -1,0 +1,21 @@
+.block-View_Cities_Cities .item-city .city_logo{
+    width:120px;
+    padding:1px;
+    border:2px #DDDDDD solid;
+}
+.block-View_Cities_Cities .item-city img{
+    width:120px;
+}
+.region-sidebar_top .block-View_Cities_Cities{
+    height:106px;
+    overflow:hidden;
+}
+
+.region-sidebar_top .block-View_Cities_Cities .item-city{
+    width:150px;
+    float:left;
+}
+
+.region-sidebar_first .block-View_Cities_Cities{
+    
+}

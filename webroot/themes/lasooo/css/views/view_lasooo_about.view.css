@@ -1,0 +1,89 @@
+.region-sidebar_slideshow #View_Lasooo_About {
+	width:470px;
+    height:300px;
+    float:left;
+    overflow:hidden;
+	/*border-bottom:2px #EEEEEE solid;*/
+}
+
+.region-sidebar_slideshow #View_Lasooo_About .block-content{
+    padding-left:20px;
+    width:auto;
+}
+
+.region-sidebar_slideshow .block-View_Lasooo_About .heart{
+    font-size:2em;
+    font-family:"微软雅黑";
+    padding:30px;
+    margin:20px 0;
+    color:#FF8C00;
+    font-weight:bold;
+}
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-cities{
+    line-height:30px;
+    height:30px;
+    clear:both;
+}
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-tags{
+    line-height:20px;
+    margin-top:10px;
+    height:44px;
+    overflow:hidden;
+    clear:both;
+}
+
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-cities *,
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-tags *{
+    color:#FF8C00;
+    font-size:1em;
+}
+
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-tags a,
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-cities a{
+    padding:3px 5px;
+}
+
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-tags a:hover,
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-cities a:hover{
+    background:#FFF;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    opacity:0.8;
+    border-radius:5px;
+}
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-tags ul,
+.region-sidebar_slideshow .block-View_Lasooo_About .enlight-cities ul{
+    margin:0px;
+    padding:0px;
+    height:auto;
+    float:left;
+}
+.region-sidebar_slideshow .block-View_Lasooo_About  .enlight-tags ul li,
+.region-sidebar_slideshow .block-View_Lasooo_About  .enlight-cities ul li{
+    width:auto;
+    margin:0px 5px;
+    float:left;
+}
+.region-sidebar_slideshow .block-View_Lasooo_About  .enlight-tags ul li.tag_title,
+.region-sidebar_slideshow .block-View_Lasooo_About  .enlight-cities ul li.city_title{
+    padding:0px;
+}
+
+.region-sidebar_slideshow .block-View_Lasooo_About .register{
+    width:200px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    background:#0060ff;
+    color:#FFFFFF;
+    font-size:1.5em;
+    margin-top:40px;
+    margin-left:250px;
+    /*margin:10px 0px;*/
+    float:right;
+	font-family:"微软雅黑";
+    font-weight:bold;
+	cursor:pointer;
+    border-radius:5px;
+    position:absolute;
+}

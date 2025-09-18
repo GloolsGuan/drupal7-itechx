@@ -1,0 +1,13 @@
+.region-main .block-system{
+    display:none;
+}
+
+.region-main .block-system .node{
+    width:200px;
+    height:320px;
+    overflow:hidden;
+    float:left;
+    padding:12px;
+    margin:5px;
+    border:3px #999999 solid;
+}
