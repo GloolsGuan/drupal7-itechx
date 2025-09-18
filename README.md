@@ -10,9 +10,6 @@ The Drupal7+ development suite with YII2(Framework), Gtools(library),Lasooo(them
 This project was originally created in **2010**. It was restructured and officially named the **iTechX project** in **2025**, with plans for long-term maintenance.
 
 
----
-
-
 ### Technical Requirements
 * **PHP:** Version 7.x or higher
 * **Database:** MySQL 5.1+, MariaDB (latest), or PostgreSQL (latest)
