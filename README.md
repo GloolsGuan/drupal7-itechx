@@ -1,11 +1,12 @@
 # drupal7-itechx
-
-The Drupal7+ development suite with YII2(Framework), Gtools(library),Lasooo(theme) supported.
 ---
+The Drupal7+ development suite with YII2(Framework), Gtools(library),Lasooo(theme) supported.
+
 
 # iTechX Project - Project Summary
-
+---
 **Author:** RobertGlools <RobertGlools@gmail.com>
+**Date:** 2025/09/01**
 ---
 
 ### Project History
